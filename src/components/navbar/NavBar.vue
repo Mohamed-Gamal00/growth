@@ -89,7 +89,7 @@ export default {
 }
 .nav a {
   text-decoration: none;
-  color: #8d91c2;
+  color: #353536;
   font-weight: 900;
 }
 .router-link-exact-active a {

@@ -813,7 +813,7 @@ input[type="number"] {
 }
 .home {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .home .counter {
   font-size: 60px;
@@ -824,7 +824,7 @@ input[type="number"] {
 }
 .home ul li a {
   text-decoration: none;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .home ul li::before {
   content: "\2022";
@@ -835,20 +835,8 @@ input[type="number"] {
   margin-right: 0em;
   font-size: 25px;
 }
-/* .home .buttoncss {
-  width: 90%;
-  font-size: 15px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
-}
-.home .buttoncss:hover {
-  width: 90%;
-  transform: scale(1.08);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.137) !important;
-} */
-/* imag hover */
 .home .main-title {
-  color: #2d2d2d;
+  color: #1f1e1e;
   text-align: center;
   text-transform: capitalize;
   padding: 0.7em 0;
