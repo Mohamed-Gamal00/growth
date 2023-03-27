@@ -1,4 +1,5 @@
 <template>
+  <!-- hassan -->
   <NavBarCom />
   <div class="articles">
     <div v-if="loading">
