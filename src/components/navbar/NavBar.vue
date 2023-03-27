@@ -87,10 +87,14 @@ export default {
 .style {
   direction: rtl;
 }
+
 .nav a {
   text-decoration: none;
   color: #353536;
   font-weight: 900;
+}
+.nav a:hover {
+  color: #f53105;
 }
 .router-link-exact-active a {
   border-bottom: 3px solid #ef4823;

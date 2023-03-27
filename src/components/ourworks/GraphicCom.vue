@@ -6,10 +6,8 @@
     </div>
   </div>
   <div class="container graphics">
-    <!-- text -->
     <div class="container pt-lg-5">
       <div class="row d-flex justify-content-center">
-        <!-- text -->
         <div class="col-md-10">
           <h1
             class="text-end text-lg-center background backgroundcenter fw-bold"
@@ -29,10 +27,7 @@
         </div>
       </div>
     </div>
-    <!-- FILTER BUTTONS -->
     <div class="filters text-center mb-3">
-      <!-- SHOW ALL BUTTON -->
-      <!-- FILTER BUTTONS -->
       <div class="p-3" style="overflow: auto; white-space: nowrap">
         <button
           class="filter-button nav-link fw-bold bttn btn-border-3"
@@ -74,9 +69,6 @@
                   style="width: 100%"
                 />
               </div>
-              <!-- <div class="text-center">
-                <img :src="item.image" height="200" style="width: 100%" />
-              </div> -->
             </div>
           </div>
         </div>
@@ -103,23 +95,14 @@ export default {
   },
   methods: {
     filterArticle(cat) {
-      // Set filteredCat data to
-      // selected product's name
       this.filteredCat = cat.id;
     },
-    // set filteredCat data to null
     showAll() {
       this.filteredCat = null;
     },
   },
   computed: {
-    // When filteredCat data changed
-    // filterapps computed property will
-    // automatically create new data model
-    // by filtering out unmatched products
     filterapps() {
-      // If filteredCat is equal to null
-      // display all data
       const data = this.filteredCat
         ? this.products.filter((item) => item.cat_id === this.filteredCat)
         : this.products;
@@ -145,18 +128,15 @@ export default {
   height: 5px;
   background-color: #421a1a;
 }
-/* Track */
 .graphics ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 .graphics ::-webkit-scrollbar-thumb {
-  background: #008ab8;
+  background: #ef4823;
   transition: all 1s ease-in-out;
 }
 
-/* Handle on hover */
 .graphics ::-webkit-scrollbar-thumb:hover {
   background: #8e8f8f;
 }
@@ -164,11 +144,8 @@ export default {
 .graphics .bttn {
   position: relative;
   display: inline-block;
-  /* margin: 15px;
-      padding: 12px 27px; */
   text-align: center;
   font-size: 16px;
-  /* letter-spacing: 1px; */
   text-decoration: none;
   color: #999999;
   background: #ffffff;
@@ -202,7 +179,7 @@ export default {
 }
 
 .graphics .bttn.btn-border-3:hover {
-  color: #111a53;
+  color: #1f1e1e;
   border: transparent;
 }
 
@@ -210,10 +187,9 @@ export default {
 .bttn.btn-border-3:hover::before {
   width: 30px;
   height: 30px;
-  border-color: #ffe711;
+  border-color: #ef4823;
 }
 .graphics .filter-button {
-  /* text-transform: uppercase; */
   margin: 6px 6px;
   width: 15%;
   display: table-column-group;
@@ -226,7 +202,6 @@ export default {
 }
 .graphics .graphics_img {
   transition: all 0.5s ease-in-out;
-  /* cursor: grab; */
 }
 .graphics .graphics_img img {
   transition: all 0.3s ease-in-out;
@@ -235,23 +210,15 @@ export default {
 .graphics .graphics_img:hover img {
   transform: scale(1);
 }
-/*******************************************/
-.graphics.containerr {
-  /* padding: 1em 0; */
-  /* float: left; */
-  /* width: 50%; */
-}
 
 .graphics.item {
-  /* flex: 0 32%; */
-  /* height: 100px; */
-  margin-bottom: 2%; /* (100-32*3)/2 */
+  margin-bottom: 2%;
 }
 
 /***********************card style*******************************/
 .graphics {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 
 .graphics .containerr {
@@ -273,7 +240,6 @@ export default {
     width: 100%;
   }
   .graphics .filter-button {
-    /* text-transform: uppercase; */
     margin: 6px 6px;
     width: 60%;
     cursor: pointer;
@@ -296,7 +262,6 @@ export default {
     height: 150px;
   }
   .graphics .filter-button {
-    /* text-transform: uppercase; */
     margin: 6px 6px;
     width: 20%;
     cursor: pointer;
@@ -306,7 +271,6 @@ export default {
   }
 }
 
-/* Large devices (laptops/desktops) */
 @media screen and (min-width: 920px) {
   .graphics .containerr {
     width: 33.33333%;
@@ -319,7 +283,6 @@ export default {
     max-width: 100%;
   }
   .graphics .filter-button {
-    /* text-transform: uppercase; */
     margin: 6px 6px;
     width: 15%;
     cursor: pointer;
@@ -335,7 +298,6 @@ export default {
   .graphics .graphics_img {
     height: 200px;
     width: 100%;
-    /* background-color: #111a53; */
   }
   .graphics .graphics_img img {
     max-width: 100%;

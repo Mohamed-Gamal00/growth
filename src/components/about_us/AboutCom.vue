@@ -581,7 +581,7 @@ export default {
 </script>
 <style>
 .about {
-  color: #111a53;
+  color: #1f1e1e;
 }
 .about .counter {
   font-size: 60px;

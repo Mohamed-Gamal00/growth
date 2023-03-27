@@ -85,14 +85,7 @@
                   <!-- <p class="text-dark" v-html="item.desc"></p> -->
                 </div>
                 <div class="d-flex justify-content-between">
-                  <button class="ordernow fw-bold">
-                    <!-- <router-link
-                        class="text-white text-decoration-none"
-                        :to="{ name: 'ordernow' }"
-                        >عرض المزيد</router-link
-                      > -->
-                    عرض المزيد
-                  </button>
+                  <button class="ordernow fw-bold">عرض المزيد</button>
                 </div>
               </div>
             </router-link>
@@ -165,12 +158,12 @@ export default {
 }
 
 .services ::-webkit-scrollbar-thumb {
-  background: #008ab8;
+  background: #ef4823;
   transition: all 1s ease-in-out;
 }
 
 .services ::-webkit-scrollbar-thumb:hover {
-  background: #8e8f8f;
+  background: #ef482349;
 }
 .services .bttn {
   position: relative;
@@ -179,7 +172,7 @@ export default {
   font-size: 16px;
   text-decoration: none;
   color: #999999;
-  background: #ffffff;
+  background: #ef4823;
   border: 3px solid #999999;
   cursor: pointer;
   transition: ease-out 0.5s;
@@ -210,7 +203,7 @@ export default {
 }
 
 .services .bttn.btn-border-3:hover {
-  color: #111a53;
+  color: #1f1e1e;
   border: transparent;
 }
 
@@ -218,7 +211,7 @@ export default {
 .bttn.btn-border-3:hover::before {
   width: 30px;
   height: 30px;
-  border-color: #ffe711;
+  border-color: #ef4823;
 }
 .services .filter-button {
   text-transform: uppercase;
@@ -236,20 +229,20 @@ export default {
 
 .services {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .services .ordernow {
   width: 50%;
   height: 40px;
-  border: 1px solid #008ab8;
+  border: 1px solid #ef4823;
   border-bottom-right-radius: 20px;
-  background-color: #008ab8;
-  color: #ffffff;
+  background-color: #ef4823;
+  color: #1a1615;
   transition: all 0.3s ease-in-out;
 }
 .services button:hover {
-  color: #008ab8;
-  background-color: #ffffff;
+  color: #1a1615;
+  background-color: #ef4823;
   font-weight: 700 !important;
 }
 

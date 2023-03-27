@@ -90,27 +90,13 @@
 </template>
 <script>
 import PageLoader from "@/components/pageloader/PageLoder.vue";
-import axios from "axios";
 export default {
   name: "CategoriesCom",
   components: { PageLoader },
   data() {
     return {
       loading: false,
-      apps: [],
     };
-  },
-  async mounted() {
-    this.loading = true;
-    let result = await axios
-      .get(`https://backend.sigma-tech.agency/api/apps`)
-      .catch((err) => {
-        console.log(err);
-      });
-    if (result.status == 200) {
-      this.apps = result.data.apps;
-    }
-    this.loading = false;
   },
 };
 </script>
@@ -140,7 +126,7 @@ export default {
 }
 
 .Categories .Categorie .Categorie-overlay {
-  background: #3d3b3b81;
+  background: #ef482341;
   position: absolute;
   height: 100%;
   width: 100%;

@@ -364,7 +364,7 @@ export default {
 <style>
 .ourwork {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .market-btn {
   display: inline-block;

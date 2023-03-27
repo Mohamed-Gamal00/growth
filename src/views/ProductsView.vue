@@ -46,7 +46,7 @@ export default {
 <style>
 .products {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .image {
   display: block;

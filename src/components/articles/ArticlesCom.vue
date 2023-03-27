@@ -44,7 +44,7 @@
             >
               <div
                 class="card articles_card"
-                style="width: 100%; color: #111a53"
+                style="width: 100%; color: #1f1e1e"
               >
                 <div class="text-center img_card">
                   <img :src="article.image" />
@@ -151,7 +151,7 @@ export default {
 <style>
 .articles {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .articles .articles_card {
   border: 0px;

@@ -108,24 +108,15 @@ export default {
   },
   methods: {
     filterApps(cat) {
-      // Set filteredCat data to
-      // selected product's name
       this.filteredCat = cat.id;
     },
-    // set filteredCat data to null
     showAll() {
       this.filteredCat = null;
     },
   },
 
   computed: {
-    // When filteredCat data changed
-    // filterapps computed property will
-    // automatically create new data model
-    // by filtering out unmatched products
     filterapps() {
-      // If filteredCat is equal to null
-      // display all data
       const data = this.filteredCat
         ? this.products.filter((item) => item.cat_id === this.filteredCat)
         : this.products;
@@ -158,13 +149,13 @@ export default {
 
 /* Handle */
 .motions ::-webkit-scrollbar-thumb {
-  background: #008ab8;
+  background: #ef4823;
   transition: all 1s ease-in-out;
 }
 
 /* Handle on hover */
 .motions ::-webkit-scrollbar-thumb:hover {
-  background: #8e8f8f;
+  background: #ef482341;
 }
 /*********************************button product css الاقسام********************************* */
 .motions .bttn {
@@ -208,7 +199,7 @@ export default {
 }
 
 .motions .bttn.btn-border-3:hover {
-  color: #111a53;
+  color: #1f1e1e;
   border: transparent;
 }
 
@@ -216,7 +207,7 @@ export default {
 .bttn.btn-border-3:hover::before {
   width: 30px;
   height: 30px;
-  border-color: #ffe711;
+  border-color: #ef4823;
 }
 .motions .filter-button {
   text-transform: uppercase;
@@ -236,7 +227,7 @@ export default {
 /***********************card style*******************************/
 .motions {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 
 .motions .containerr {
@@ -312,10 +303,7 @@ export default {
   .motions .motions_ifram {
     height: 190px;
     width: 100%;
-    /* border-top-left-radius: 15px;
-    border-top-right-radius: 15px; */
     background-color: #222222;
-    /* background-color: #111a53; */
   }
   .motions .motions_ifram iframe {
     max-width: 100%;

@@ -215,7 +215,7 @@ export default {
 }
 
 .services .bttn.btn-border-3:hover {
-  color: #111a53;
+  color: #1f1e1e;
   border: transparent;
 }
 
@@ -250,7 +250,7 @@ export default {
 /***********************card style*******************************/
 .services {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .services .ordernow {
   width: 50%;
@@ -328,7 +328,7 @@ export default {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: #222222;
-    /* background-color: #111a53; */
+    /* background-color: #1f1e1e; */
   }
   .services .services_img img {
     max-width: 100%;

@@ -96,7 +96,7 @@ export default {
 <style>
 /* .services {
   direction: rtl;
-  color: #111a53;
+  color: #1f1e1e;
 }
 .services .ordernow {
   width: 50%;

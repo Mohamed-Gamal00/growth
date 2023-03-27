@@ -18,14 +18,14 @@
               >
                 <span style="color: #ef4823">
                   <img
-                    src="@/assets/new_img/color-2.png"
+                    src="@/assets/new_img/arabic.png"
                     width="100"
                     height="40"
                     alt="img"
                 /></span>
                 رائدين في مجال التقنيات الحديثة والتسويق الإلكتروني
               </h2>
-              <p class="pb-3 font_p_home" style="color: #8d91c2">
+              <p class="pb-3 font_p_home" style="color: #1f1e1e">
                 لتقديم المزيد من فرص زيادة الأرباح في ظل التطور التكنولوجي وفتح
                 أسواق العمل الجديدة نقدم دعم الأنشطة التجارية المتنوعة
               </p>
@@ -314,7 +314,6 @@
                 exact
               >
                 <a
-                  href=""
                   style="background-color: #ef4823; height: 43px"
                   class="btn border-0 text-center text-light fw-bold rounded-pill py-2 px-4"
                   >المزيد</a
@@ -799,21 +798,22 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 input[type="number"] {
 }
 .home {
   direction: rtl;
-  color: #1f1e1e;
+  color: #1f1e1e !important;
+}
+a {
+  color: #212a34 !important;
+  font-weight: bold !important;
 }
 .home .counter {
   font-size: 60px;
@@ -836,7 +836,7 @@ input[type="number"] {
   font-size: 25px;
 }
 .home .main-title {
-  color: #1f1e1e;
+  color: #2d2d2d;
   text-align: center;
   text-transform: capitalize;
   padding: 0.7em 0;
@@ -847,7 +847,6 @@ input[type="number"] {
   float: right;
   width: 50%;
 }
-/* Extra small devices (phones, 600px and down) */
 
 @media screen and (max-width: 640px) {
   .home .containerr {

@@ -138,16 +138,6 @@ export default {
 
 .partners .swiper-pagination-bullet-active {
   color: #fff;
-  background: #007aff;
-}
-.our-partners {
-  /* padding: 1.2rem 0.75rem;
-    background: #fff;
-    border-radius: 1rem;
-    text-align: center;
-    border: 0.5px solid #60c5a8;
-    box-shadow: rgba(0, 0, 0, 0.185) 0px 2px 10px 0px,
-      rgba(0, 0, 0, 0.151) 0px 2px 25px 0px; */
 }
 .our-partners .pic {
   display: inline-block;
@@ -164,7 +154,11 @@ export default {
   display: block;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #008ab8;
+  color: #212a34;
   margin: 0 0 7px 0;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: coral;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div
     class="container-fluid mt-5"
-    style="background-color: #111a53; direction: rtl"
+    style="background-color: #1f1e1e; direction: rtl"
   >
     <div class="row d-flex justify-content-center">
       <div class="col-md-9">
@@ -15,7 +15,7 @@
                   <div class="col-md-6 col-lg-3 text-center">
                     <span class="">
                       <img
-                        src="@/assets/new_img/color-2.png"
+                        src="@/assets/new_img/white.png"
                         style="position: relative; bottom: 30px"
                         width="100"
                         alt=""
@@ -130,8 +130,10 @@
 
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     Designed By &copy;
-                    <a class="border-bottom text-decoration-none" href=""
-                      >ٍSIGMA</a
+                    <a
+                      class="border-bottom text-decoration-none"
+                      style="color: #ef4823 !important"
+                      >GROWTH</a
                     >
                   </div>
                 </div>
@@ -151,7 +153,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+a {
+  color: white !important;
+}
 :root {
   --primary: #2380be;
   --light: #05121b;
@@ -165,7 +170,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3f6f8;
+  background-color: #ef4823;
   color: var(--light);
   border: 1px solid rgba(256, 256, 256, 0.1);
   transition: 0.3s;
