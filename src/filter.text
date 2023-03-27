@@ -1,0 +1,223 @@
+<template>
+  <NavBarCom />
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10">
+        <h1
+          class="text-end text-lg-center background backgroundcenter fw-bold"
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          data-aos-once="false"
+        >
+          <strong>motion</strong>
+        </h1>
+        <div style="width: 100%">
+          <p class="fw-bold lh-lg text-lg-center">
+            نقدم لك أفضل خدمات تصميم الجرافيك (الصور- الفيديو) بطرق إحترافية
+            وبالاعتماد على أحدث البرامج، حرصًا على توصيل شعارك وخدماتك للعملاء
+            بصورة متميزة وعلامة تجارية معترف بها.{{ id }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="filters">
+      <!-- SHOW ALL BUTTON -->
+      <button class="filter-button show-all-button" @click="showAll()">
+        Show All
+      </button>
+      <!-- FILTER BUTTONS -->
+      <button
+        class="filter-button"
+        v-for="(cat, index) in cats"
+        :key="index"
+        @click="filterArticle(cat)"
+      >
+        {{ cat.name }}
+      </button>
+    </div>
+    <div class="filtercontainer">
+      <!-- ARTICLES -->
+      <div class="item" v-for="item in motionsfilter" :key="item.id">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.content }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <FooterCom />
+  </div>
+</template>
+<script>
+import NavBarCom from "@/components/navbar/NavBar.vue";
+// import axios from "axios";
+import FooterCom from "@/components/footer/FooterCom.vue";
+export default {
+  name: "MotionCom",
+  components: { NavBarCom, FooterCom },
+  data() {
+    return {
+      filteredCat: null,
+      cats: [
+        { id: 1, name: "History" },
+        { id: 2, name: "math" },
+        { id: 3, name: "Science" },
+      ],
+      // categories: [],
+      motions: [
+        {
+          id: 1,
+          cat_id: 1,
+          category: "History",
+          title: "History Title 1",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 2,
+          cat_id: 1,
+          category: "History",
+          title: "History Title 2",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 3,
+          cat_id: 1,
+          category: "History",
+          title: "History Title 3",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 4,
+          cat_id: 2,
+          category: "Math",
+          title: "Math Title 1",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 5,
+          cat_id: 2,
+          category: "Math",
+          title: "Math Title 2",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 6,
+          cat_id: 3,
+          category: "Science",
+          title: "Science Title 1",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 7,
+          cat_id: 3,
+          category: "Science",
+          title: "Science Title 2",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 8,
+          cat_id: 3,
+          category: "Science",
+          title: "Science Title 3",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 9,
+          cat_id: 4,
+          category: "Nature",
+          title: "Nature Title 1",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+        {
+          id: 10,
+          cat_id: 4,
+          category: "Nature",
+          title: "Nature Title 2",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in malesuada libero. Nunc vulputate eros eget lacinia volutpat.",
+        },
+      ],
+    };
+  },
+  methods: {
+    filterArticle(cat) {
+      // Set filteredCat data to
+      // selected category's name
+      this.filteredCat = cat.id;
+    },
+    // set filteredCat data to null
+    showAll() {
+      this.filteredCat = null;
+    },
+  },
+  computed: {
+    // When filteredCat data changed
+    // filteredMotion computed property will
+    // automatically create new data model
+    // by filtering out unmatched categories
+    motionsfilter() {
+      // If filteredCat is equal to null
+      // display all data
+      /* condition ? if true : if false */
+      const data = this.filteredCat
+        ? this.motions.filter((item) => item.cat_id === this.filteredCat)
+        : this.motions;
+      return data;
+    },
+  },
+  // async mounted() {
+  //   console.log("motion categorie");
+  //   let result = await axios.get(`http://localhost:3000/categories`);
+  //   if (result.status == 200) {
+  //     console.log(result);
+  //     this.categories = result.data;
+  //     console.log(this.motion);
+  //   }
+  //   console.log("motion articles");
+  //   let result2 = await axios.get(`http://localhost:3000/articles`);
+  //   if (result2.status == 200) {
+  //     console.log(result2);
+  //     this.categories = result2.data;
+  //     console.log(this.motion);
+  //   }
+  // },
+};
+</script>
+
+<style>
+.filtercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 32%;
+  height: 100px;
+  margin-bottom: 2%; /* (100-32*3)/2 */
+}
+.filter-button {
+  text-transform: uppercase;
+  margin: 0 6px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 1.2rem;
+  background: #008ab8;
+  color: #fff;
+}
+
+.show-all-button {
+  background: #008ab8;
+}
+</style>
