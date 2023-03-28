@@ -61,11 +61,11 @@
             data-aos-once="1"
           >
             <div class="card border-0 graphics_img">
-              <div class="images" v-viewer.static="{ title: false }">
+              <div class="images" v-viewer>
                 <img
                   :src="item.image"
+                  alt="img"
                   height="200"
-                  title="false"
                   style="width: 100%"
                 />
               </div>

@@ -30,14 +30,14 @@
               data-aos-delay="100"
               data-aos-once="false"
             >
-              Sigma Business شركة تأسست عام 2022 م، شركة مصرية تقدم خدمات
-              التصميم الإلكتروني ومختلف أنواع الحلول الرقمية والتسويق
-              الإلكتروني. فريق عمل متكامل لديه خبرة أكثر من 10 سنوات في تقديم كل
-              الحلول التقنية والتسويق الرقمي بأفضل الأسعار. + قدمنا الكثير من
-              الخدمات التقنية لعدد هائل من العملاء والمؤسسات والهيئات الحكومية
-              والخاصة والمراكز، بالاعتماد على أحدث الأساليب التقنية، ونطمح لأن
-              نكون الأفضل في تصميم المواقع وإنشاء المتاجر الإلكترونية والتطبيقات
-              والتسويق الإلكتروني.
+              Growth شركة تأسست عام 2022 م، شركة مصرية تقدم خدمات التصميم
+              الإلكتروني ومختلف أنواع الحلول الرقمية والتسويق الإلكتروني. فريق
+              عمل متكامل لديه خبرة أكثر من 10 سنوات في تقديم كل الحلول التقنية
+              والتسويق الرقمي بأفضل الأسعار. + قدمنا الكثير من الخدمات التقنية
+              لعدد هائل من العملاء والمؤسسات والهيئات الحكومية والخاصة والمراكز،
+              بالاعتماد على أحدث الأساليب التقنية، ونطمح لأن نكون الأفضل في
+              تصميم المواقع وإنشاء المتاجر الإلكترونية والتطبيقات والتسويق
+              الإلكتروني.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@
               <img
                 class="img-fluid"
                 src="@/assets/our_vision.png"
-                alt=""
+                alt="img"
                 data-aos="zoom-in"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="600"
@@ -101,7 +101,7 @@
     <!-- text -->
     <div class="container-fluid mt-5">
       <!-- text -->
-      <div class="row d-flex justify-content-center" style="direction: rtl">
+      <!-- <div class="row d-flex justify-content-center" style="direction: rtl">
         <div class="col-md-9">
           <h1
             class="text-end background fw-bold"
@@ -127,7 +127,7 @@
             في تقديم كافة الخدمات التقنية والتسويق الإلكتروني
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- sliderCom-->
     <SliderCom />
@@ -290,7 +290,7 @@
                                 >
                                   <div class="form-outline flex-fill mb-0">
                                     <label
-                                      style="color: #4296f0"
+                                      style="color: #000000"
                                       class="form-label"
                                       for="form3Example1c"
                                       >الاسم</label
@@ -318,7 +318,7 @@
                                 >
                                   <div class="form-outline flex-fill mb-0">
                                     <label
-                                      style="color: #4296f0"
+                                      style="color: #000000"
                                       class="form-label"
                                       for="form3Example3c"
                                       >رقم الهاتف</label
@@ -348,7 +348,7 @@
                                 <label
                                   class="form-label"
                                   for="form3Example4c"
-                                  style="color: #4296f0"
+                                  style="color: #000000"
                                   >البريد الالكتروني</label
                                 >
                                 <input
@@ -374,7 +374,7 @@
                                 <label
                                   class="form-label"
                                   for="form4Example1c"
-                                  style="color: #4296f0"
+                                  style="color: #000000"
                                   >الموضوع</label
                                 >
                                 <input
@@ -400,12 +400,12 @@
                                 <label
                                   class="form-label"
                                   for="textAreaExample"
-                                  style="color: #4296f0"
+                                  style="color: #000000"
                                   >الرسالة</label
                                 >
                                 <textarea
                                   class="form-control borderstyle"
-                                  id="textAreaExample1"
+                                  id="textAreaExample"
                                   rows="4"
                                   v-model="contact.message"
                                 ></textarea>
@@ -437,8 +437,9 @@
                             <div class="text-start mb-3 mt-4 mb-lg-4">
                               <button
                                 @click="contactus()"
+                                style="background-color: #ef4823"
                                 type="button"
-                                class="btn btn-primary btn-lg text-end"
+                                class="btn border-0 btn-primary btn-lg text-end"
                               >
                                 ارسال
                               </button>
@@ -452,7 +453,7 @@
                             src="@/assets/contact_us.gif"
                             class="img-fluid"
                             height="400"
-                            alt="Sample image"
+                            alt="Sample"
                           />
                         </div>
                       </div>

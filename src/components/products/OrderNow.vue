@@ -31,7 +31,7 @@
                                 >
                                   <div class="form-outline flex-fill mb-0">
                                     <label
-                                      style="color: #5d77b3"
+                                      style="color: #000000"
                                       class="form-label"
                                       for="form3Example1c"
                                       >الاسم</label
@@ -59,7 +59,7 @@
                                 >
                                   <div class="form-outline flex-fill mb-0">
                                     <label
-                                      style="color: #5d77b3"
+                                      style="color: #000000"
                                       class="form-label"
                                       for="form3Example3c"
                                       >رقم الهاتف</label
@@ -89,7 +89,7 @@
                                 <label
                                   class="form-label"
                                   for="form3Example4c"
-                                  style="color: #5d77b3"
+                                  style="color: #000000"
                                   >البريد الالكتروني</label
                                 >
                                 <input
@@ -115,7 +115,7 @@
                                 <label
                                   class="form-label"
                                   for="form4Example1c"
-                                  style="color: #5d77b3"
+                                  style="color: #000000"
                                   >الاقسام</label
                                 >
                                 <select
@@ -143,12 +143,12 @@
                                 <label
                                   class="form-label"
                                   for="textAreaExample"
-                                  style="color: #5d77b3"
+                                  style="color: #000000"
                                   >الرسالة</label
                                 >
                                 <textarea
                                   class="form-control borderstyle"
-                                  style="border: 1px solid #5d77b3"
+                                  style="border: 1px solid #000000"
                                   id="textAreaExample1"
                                   rows="4"
                                   v-model="contact.desc"
@@ -183,7 +183,7 @@
                                 @click="ordernow()"
                                 type="button"
                                 class="btn btn-lg text-white text-end"
-                                style="background-color: #008ab8"
+                                style="background-color: #a23017"
                               >
                                 ارسال
                               </button>
@@ -322,6 +322,6 @@ export default {
 
 <style>
 .borderstyle {
-  border-bottom: 1px solid #5d77b3 !important;
+  border-bottom: 1px solid #000000 !important;
 }
 </style>

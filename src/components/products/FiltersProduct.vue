@@ -73,7 +73,12 @@
                 style="width: 100%; background-color: #f3f3f3"
               >
                 <div class="text-center">
-                  <img :src="item.image" height="200" style="width: 100%" />
+                  <img
+                    :src="item.image"
+                    alt="img"
+                    height="200"
+                    style="width: 100%"
+                  />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold">
@@ -165,23 +170,20 @@ export default {
 
 /* Handle */
 .services ::-webkit-scrollbar-thumb {
-  background: #008ab8;
+  background: #867976;
   transition: all 1s ease-in-out;
 }
 
 /* Handle on hover */
 .services ::-webkit-scrollbar-thumb:hover {
-  background: #8e8f8f;
+  background: #ef482344;
 }
 /*********************************button product css الاقسام********************************* */
 .services .bttn {
   position: relative;
   display: inline-block;
-  /* margin: 15px;
-  padding: 12px 27px; */
   text-align: center;
   font-size: 16px;
-  /* letter-spacing: 1px; */
   text-decoration: none;
   color: #999999;
   background: #ffffff;
@@ -223,7 +225,7 @@ export default {
 .bttn.btn-border-3:hover::before {
   width: 30px;
   height: 30px;
-  border-color: #ffe711;
+  border-color: #ef4823;
 }
 .services .filter-button {
   text-transform: uppercase;
@@ -234,16 +236,8 @@ export default {
   background-color: transparent;
   font-size: 1.2rem;
 }
-/*******************************************/
-.services.containerr {
-  /* padding: 1em 0; */
-  /* float: left; */
-  /* width: 50%; */
-}
 
 .services.item {
-  /* flex: 0 32%; */
-  /* height: 100px; */
   margin-bottom: 2%; /* (100-32*3)/2 */
 }
 
@@ -255,17 +249,11 @@ export default {
 .services .ordernow {
   width: 50%;
   height: 40px;
-  border: 1px solid #008ab8;
-  background-color: #008ab8;
+  border: 1px solid #ef4823;
+  background-color: #ef4823;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
-.services button:hover {
-  color: #008ab8;
-  background-color: #ffffff;
-  font-weight: 700 !important;
-}
-
 .services .containerr {
   padding: 1em 0;
   float: left;

@@ -47,7 +47,7 @@
                 style="width: 100%; color: #1f1e1e"
               >
                 <div class="text-center img_card">
-                  <img :src="article.image" />
+                  <img :src="article.image" alt="img" />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold">

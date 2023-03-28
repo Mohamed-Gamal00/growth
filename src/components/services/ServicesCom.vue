@@ -93,29 +93,4 @@ export default {
   },
 };
 </script>
-<style>
-/* .services {
-  direction: rtl;
-  color: #1f1e1e;
-}
-.services .ordernow {
-  width: 50%;
-  height: 40px;
-  border: 1px solid #008ab8;
-  border-bottom-left-radius: 20px;
-  background-color: #008ab8;
-  color: #ffffff;
-}
-.services .shadow_style {
-  border: 0px solid #00000012;
-  border-bottom-left-radius: 30px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.055);
-  transition: all 0.3s ease-in-out;
-}
-.services .shadow_style:hover {
-  border: 1px solid #00000012;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.13);
-
-  transform: scale(1.01);
-} */
-</style>
+<style></style>

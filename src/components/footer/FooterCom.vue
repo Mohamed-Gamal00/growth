@@ -11,18 +11,18 @@
             <div class="text-light" style="margin-top: 6rem">
               <div class="container py-5">
                 <div class="row g-5">
-                  <!--SIGMA-->
+                  <!--Growth-->
                   <div class="col-md-6 col-lg-3 text-center">
                     <span class="">
                       <img
                         src="@/assets/new_img/white.png"
                         style="position: relative; bottom: 30px"
                         width="100"
-                        alt=""
+                        alt="img"
                       />
                     </span>
                     <p>
-                      SIGMA رائدين في مجال التقنيات الحديثة والتسويق الإلكتروني
+                      Growth رائدين في مجال التقنيات الحديثة والتسويق الإلكتروني
                       لتقديم المزيد من فرص زيادة الأرباح في ظل التطور التكنولوجي
                       نقدم دعم الأنشطة التجارية المتنوعة
                     </p>

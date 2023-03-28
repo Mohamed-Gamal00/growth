@@ -3,9 +3,6 @@
   <div class="style sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
-        <!-- <a class="navbar-brand" href="#">
-          <img src="@/assets/sigmaL.png" width="70" alt="" />
-        </a> -->
         <router-link class="navbar-brand" :to="{ name: 'home' }">
           <img
             src="@/assets/new_img/color-2.png"

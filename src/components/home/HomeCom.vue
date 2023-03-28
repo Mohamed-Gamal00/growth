@@ -37,7 +37,7 @@
               >
             </div>
             <div class="col-lg-6 text-center mt-sm-4 text-lg-start">
-              <img class="img-fluid" src="@/assets/sigm_b.png" alt="" />
+              <img class="img-fluid" src="@/assets/sigm_b.png" alt="img" />
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@
               <div class="box" v-for="plan in plans" :key="plan">
                 <img
                   :src="plan.image"
-                  alt="service image"
+                  alt="service"
                   width="100"
                   height="100"
                   class="service-img rounded-circle"
@@ -158,12 +158,12 @@
                   <img
                     class="img-fluid"
                     src="https://img.freepik.com/free-photo/closeup-business-woman-hand-typing-laptop-keyboard_1232-2750.jpg?size=626&ext=jpg&ga=GA1.2.1470621987.1662634783&semt=sph"
-                    alt=""
+                    alt="img"
                   />
                 </div>
               </div>
               <div class="col-md-5 ps-md-0" style="box-sizing: content-box">
-                <p class="fs-4 fw-bold">SIGMA BUSINESS</p>
+                <p class="fs-4 fw-bold">GROWTH</p>
                 <ul class="p-0">
                   <li class="mt-3">فريق محترف ومتميز</li>
                   <li class="mt-3">
@@ -218,7 +218,7 @@
                 <div class="service box">
                   <img
                     :src="service.image"
-                    alt="service image"
+                    alt="serviceimage"
                     width="100"
                     height="100"
                     class="service-img rounded-circle"
@@ -292,6 +292,7 @@
                         class="content-image"
                         v-if="app.image"
                         :src="app.image"
+                        alt="img"
                       />
                       <div class="content-details fadeIn-bottom">
                         <h3 class="content-title">{{ app.title }}</h3>
@@ -368,8 +369,7 @@
                   style="width: 100%"
                 >
                   <div class="articles_img" style="overflow: hidden">
-                    <img v-if="article.image" :src="article.image" />
-                    <img v-else src="@/assets/error.jpg" />
+                    <img :src="article.image" alt="img" />
                   </div>
                   <div class="card-body">
                     <h5 class="card-title fw-bold">
@@ -622,7 +622,7 @@
                             src="@/assets/contact_us.gif"
                             class="img-fluid"
                             height="400"
-                            alt="Sample image"
+                            alt="Sample"
                           />
                         </div>
                       </div>

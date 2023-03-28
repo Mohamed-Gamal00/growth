@@ -3,7 +3,7 @@
     <div class="loading-container">
       <div class="loading"></div>
       <div id="loading-text">loading</div>
-      <div id="loading-sigma">SIGMA</div>
+      <div id="loading-sigma">GROWTH</div>
     </div>
     <br />
   </div>
@@ -12,18 +12,6 @@
 <script>
 export default {
   name: "PageLoader",
-  // data: () => {
-  //   return {
-  //     isloaded: false,
-  //   };
-  // },
-  // async mounted() {
-  //   document.onreadystatechange = () => {
-  //     if (document.readyState == "complete") {
-  //       this.isloaded = true;
-  //     }
-  //   };
-  // },
 };
 </script>
 
@@ -55,7 +43,7 @@ export default {
 
 .loading {
   border: 2px solid transparent;
-  border-color: transparent #248de4 transparent #248de4;
+  border-color: transparent #ef4823 transparent #ef4823;
   -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
   -moz-transform-origin: 50% 50%;
   -o-animation: rotate-loading 1.5s linear 0s infinite normal;
@@ -83,7 +71,7 @@ export default {
   -o-animation: loading-text-opacity 2s linear 0s infinite normal;
   -webkit-animation: loading-text-opacity 2s linear 0s infinite normal; */
   /* animation: loading-text-opacity 2s linear 0s infinite normal; */
-  color: #008ab8;
+  color: #ef4823;
   font-family: "Helvetica Neue, " Helvetica ", " "arial";
   font-size: 10px;
   font-weight: bold;
@@ -100,7 +88,7 @@ export default {
   -o-animation: loading-text-opacity 2s linear 0s infinite normal;
   -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
   animation: loading-text-opacity 2s linear 0s infinite normal;
-  color: #008ab8;
+  color: #ef4823;
   font-family: "Helvetica Neue, " Helvetica ", " "arial";
   font-size: 10px;
   font-weight: bold;

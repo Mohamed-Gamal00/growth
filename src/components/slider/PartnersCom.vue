@@ -41,6 +41,7 @@
               width="100"
               height="100"
               class="rounded-circle"
+              alt="img"
             />
           </div>
           <h3 class="title">{{ partner.name }}</h3>

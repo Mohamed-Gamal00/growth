@@ -17,7 +17,7 @@
                 <div class="Categorie">
                   <div class="Categorie-overlay"></div>
                   <div class="Categorie-image">
-                    <img src="@/assets/Developer.png" />
+                    <img src="@/assets/Developer.png" alt="img" />
                   </div>
                   <div class="Categorie-details fadeIn-bottom">
                     <h3 class="text-black fw-bold">Applications</h3>
@@ -44,7 +44,7 @@
                 <div class="Categorie">
                   <div class="Categorie-overlay"></div>
                   <div class="Categorie-image">
-                    <img src="@/assets/Animation.png" />
+                    <img src="@/assets/Animation.png" alt="img" />
                   </div>
                   <div class="Categorie-details fadeIn-bottom">
                     <h3 class="text-black fw-bold">motion</h3>
@@ -66,7 +66,7 @@
                 <div class="Categorie">
                   <div class="Categorie-overlay"></div>
                   <div class="Categorie-image">
-                    <img src="@/assets/graphic.png" />
+                    <img src="@/assets/graphic.png" alt="img" />
                   </div>
                   <div class="Categorie-details fadeIn-bottom">
                     <h3 class="text-black fw-bold">graphic</h3>

@@ -28,12 +28,6 @@
                 {{ app.body }}
               </p>
               <div class="text-center">
-                <!-- <a
-                    href=""
-                    style="background-color: #008ab8"
-                    class="btn text-light rounded-pill border-2 py-3 px-5"
-                    >تواصل معنا</a
-                  > -->
                 <div class="container">
                   <center>
                     <!-- Google Play button -->
@@ -83,7 +77,7 @@
                 class="img-fluid shadow rounded-3"
                 style="width: 100%; height: 300px"
                 :src="app.image"
-                alt=""
+                alt="img"
               />
             </div>
           </div>
@@ -130,7 +124,7 @@
                 style="width: 22rem; height: 25rem; overflow: hidden"
               >
                 <div class="text-center" width="100" height="100">
-                  <img :src="work.image" width="150" height="150" />
+                  <img :src="work.image" alt="img" width="150" height="150" />
                 </div>
                 <div class="card-body fw-bold">
                   <h5 class="card-title mb-4 fw-bold">{{ work.title }}</h5>
@@ -181,7 +175,7 @@
                 class="img-fluid rounded-3"
                 style="width: 100%; height: 300px"
                 :src="app.b_image"
-                alt=""
+                alt="img"
               />
             </div>
             <div class="col-lg-6 fw-bold text-lg-end">
@@ -235,6 +229,7 @@
                       width="100"
                       height="100"
                       class="rounded-circle"
+                      alt="img"
                     />
                   </div>
                   <span id="anim-number-pizza" class="counter-number"></span>
@@ -253,6 +248,7 @@
                       width="100"
                       height="100"
                       class="rounded-circle"
+                      alt="img"
                     />
                   </div>
                   <span id="anim-number-pizza" class="counter-number"></span>
@@ -271,6 +267,7 @@
                       width="100"
                       height="100"
                       class="rounded-circle"
+                      alt="img"
                     />
                   </div>
                   <span id="anim-number-pizza" class="counter-number"></span>
@@ -289,6 +286,7 @@
                       width="100"
                       height="100"
                       class="rounded-circle"
+                      alt="img"
                     />
                   </div>
                   <span id="anim-number-pizza" class="counter-number"></span>
@@ -384,7 +382,7 @@ export default {
   border-radius: 8px;
 }
 .market-btn:hover {
-  background-color: #008ab8;
+  background-color: #ef4823;
   text-decoration: none;
 }
 .market-btn .market-button-title {

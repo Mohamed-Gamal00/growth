@@ -1,7 +1,6 @@
 <template>
   <div class="container"></div>
-  <!-- ++++++++++++++++++++++++++++++++++++ -->
-  <section class="our-team-section">
+  <!-- <section class="our-team-section">
     <div class="container">
       <div class="row">
         <div
@@ -18,9 +17,6 @@
                 class="rounded-circle"
               />
             </div>
-            <!-- <div class="pic">
-              <img :src="member.image" />
-            </div> -->
             <div class="team-content">
               <h3 class="title">{{ member.name }}</h3>
               <span class="post">{{ member.job }}</span>
@@ -52,29 +48,21 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 
 <script>
-import axios from "axios";
-// Import Swiper Vue.js components
-// import { Swiper, SwiperSlide } from "swiper/vue";
-
-// Import Swiper styles
+// import axios from "axios";
 import "swiper/css";
 
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import required modules
 import { Pagination, Navigation } from "swiper";
 
 export default {
   name: "SliderCom",
-  components: {
-    // Swiper,
-    // SwiperSlide,
-  },
+  components: {},
   data() {
     return {
       members: [],
@@ -85,16 +73,16 @@ export default {
       modules: [Pagination, Navigation],
     };
   },
-  async mounted() {
-    let result = await axios.get(`https://backend.sigma-tech.agency/api/team`);
-    if (result.status == 200) {
-      this.members = result.data.team;
-    }
-  },
+  // async mounted() {
+  //   let result = await axios.get(`https://backend.sigma-tech.agency/api/team`);
+  //   if (result.status == 200) {
+  //     this.members = result.data.team;
+  //   }
+  // },
 };
 </script>
 
-<style>
+<!-- <style>
 .our-team-section {
   position: relative;
   padding-top: 40px;
@@ -105,7 +93,6 @@ export default {
   top: -0;
   left: 0;
   content: " ";
-  /* background: url(img/service-section-bottom.png); */
   background-size: 100% 100px;
   width: 100%;
   height: 100px;
@@ -118,10 +105,10 @@ export default {
   text-align: center;
   overflow: hidden;
   position: relative;
-  border-bottom: 5px solid #008ab8;
+  border-bottom: 5px solid #ef4823;
 }
 .our-team:hover {
-  border-bottom: 5px solid #008ab8;
+  border-bottom: 5px solid #ef4823;
 }
 
 .our-team .pic {
@@ -131,12 +118,6 @@ export default {
   margin-bottom: 50px;
   z-index: 1;
   position: relative;
-  /* display: inline-block;
-  width: 130px;
-  height: 130px;
-  background: #fff;
-  padding: 0.75rem;
-  margin-bottom: 1.5rem; */
 }
 .our-team .pic img {
   width: 100%;
@@ -148,7 +129,7 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #008ab8;
+  background: #ef4823;
   position: absolute;
   bottom: 135%;
   right: 0;
@@ -159,14 +140,14 @@ export default {
 }
 .our-team:hover .pic:before {
   height: 100%;
-  background: #01a3da;
+  background: #d3583c;
 }
 .our-team .pic:after {
   content: "";
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #008ab8;
+  background: #ef4823;
   position: absolute;
   top: 0;
   left: 0;
@@ -174,12 +155,11 @@ export default {
   transition: all 0.3s linear 0s;
 }
 .our-team:hover .pic:after {
-  background: #015470;
+  background: #a73015;
 }
 
 .our-team .pic img {
   width: 100%;
-  /* height: auto; */
   object-fit: cover;
   border-radius: 50%;
   transform: scale(1);
@@ -214,7 +194,7 @@ export default {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #008ab8;
+  background: #ef4823;
   position: absolute;
   bottom: -100px;
   left: 0;
@@ -234,7 +214,7 @@ export default {
   transition: all 0.3s ease 0s;
 }
 .our-team .social li a:hover {
-  color: #008ab8;
+  color: #ef4823;
   background: #f7f5ec;
 }
 @media only screen and (max-width: 990px) {
@@ -242,4 +222,4 @@ export default {
     margin-bottom: 30px;
   }
 }
-</style>
+</style> -->

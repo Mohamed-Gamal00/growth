@@ -37,7 +37,7 @@
                   <button
                     type="button"
                     class="btn"
-                    style="background-color: #008ab8; width: 50%"
+                    style="background-color: #ef4823; width: 50%"
                   >
                     <!-- اطلب الان -->
                     اطلب الان
@@ -55,7 +55,7 @@
               class="img-fluid rounded-3"
               style="width: 100%; height: 300px"
               :src="product.image"
-              alt=""
+              alt="img"
             />
           </div>
         </div>
@@ -138,11 +138,11 @@ export default {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #008ab8;
+  background: #ef4823;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #008ab8;
+  background: #ef482356;
 }
 </style>

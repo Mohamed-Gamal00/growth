@@ -75,7 +75,12 @@
                 style="width: 100%; background-color: #f3f3f3"
               >
                 <div class="text-center">
-                  <img :src="item.image" height="200" style="width: 100%" />
+                  <img
+                    :src="item.image"
+                    alt="img"
+                    height="200"
+                    style="width: 100%"
+                  />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title fw-bold">
@@ -240,12 +245,6 @@ export default {
   color: #1a1615;
   transition: all 0.3s ease-in-out;
 }
-.services button:hover {
-  color: #1a1615;
-  background-color: #ef4823;
-  font-weight: 700 !important;
-}
-
 .services .containerr {
   padding: 1em 0;
   float: left;
