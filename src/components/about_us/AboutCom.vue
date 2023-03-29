@@ -30,14 +30,14 @@
               data-aos-delay="100"
               data-aos-once="false"
             >
-              Growth شركة تأسست عام 2022 م، شركة مصرية تقدم خدمات التصميم
-              الإلكتروني ومختلف أنواع الحلول الرقمية والتسويق الإلكتروني. فريق
-              عمل متكامل لديه خبرة أكثر من 10 سنوات في تقديم كل الحلول التقنية
-              والتسويق الرقمي بأفضل الأسعار. + قدمنا الكثير من الخدمات التقنية
-              لعدد هائل من العملاء والمؤسسات والهيئات الحكومية والخاصة والمراكز،
-              بالاعتماد على أحدث الأساليب التقنية، ونطمح لأن نكون الأفضل في
-              تصميم المواقع وإنشاء المتاجر الإلكترونية والتطبيقات والتسويق
-              الإلكتروني.
+              مؤسسة نمو التقنية شركة تأسست عام 2022 م، شركة مصرية تقدم خدمات
+              التصميم الإلكتروني ومختلف أنواع الحلول الرقمية والتسويق
+              الإلكتروني. فريق عمل متكامل لديه خبرة أكثر من 10 سنوات في تقديم كل
+              الحلول التقنية والتسويق الرقمي بأفضل الأسعار. + قدمنا الكثير من
+              الخدمات التقنية لعدد هائل من العملاء والمؤسسات والهيئات الحكومية
+              والخاصة والمراكز، بالاعتماد على أحدث الأساليب التقنية، ونطمح لأن
+              نكون الأفضل في تصميم المواقع وإنشاء المتاجر الإلكترونية والتطبيقات
+              والتسويق الإلكتروني.
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@
             <div class="col-lg-4 text-center text-lg-start">
               <img
                 class="img-fluid"
-                src="@/assets/our_vision.png"
+                src="@/assets/new_img/webp/vision.webp"
                 alt="img"
                 data-aos="zoom-in"
                 data-aos-easing="ease-out-cubic"
@@ -151,7 +151,6 @@
                 separator=","
                 decimalSeparator="."
                 :autoinit="true"
-                @finished="alert(`Counting finished!`)"
               />
               <p class="fs-6 fw-bold">
                 <strong>عملاء</strong>
@@ -168,7 +167,6 @@
                 separator=","
                 decimalSeparator="."
                 :autoinit="true"
-                @finished="alert(`Counting finished!`)"
               />
               <p class="fs-6 fw-bold">
                 <strong>موظفين</strong>
@@ -185,7 +183,6 @@
                 separator=","
                 decimalSeparator="."
                 :autoinit="true"
-                @finished="alert(`Counting finished!`)"
               />
               <p class="fs-6 fw-bold">
                 <strong>مشاهدات</strong>
@@ -202,7 +199,6 @@
                 separator=","
                 decimalSeparator="."
                 :autoinit="true"
-                @finished="alert(`Counting finished!`)"
               />
               <p class="fs-6 fw-bold">
                 <strong>مشاريع</strong>
@@ -450,7 +446,7 @@
                           class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2"
                         >
                           <img
-                            src="@/assets/contact_us.gif"
+                            src="@/assets/new_img/webp/contact_us.webp"
                             class="img-fluid"
                             height="400"
                             alt="Sample"

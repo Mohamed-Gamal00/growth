@@ -41,18 +41,15 @@
                       class="text-decoration-none"
                       :to="{ name: 'article', params: { id: article.id } }"
                     >
-                      <a href="" class="text-decoration-none">
-                        <div class="media">
-                          <!-- <img src="@/assets/11104.jpg" alt="" /> -->
-                          <img :src="article.image" />
-                          <div class="media-body">
-                            <h4>
-                              <strong>{{ article.title }}</strong>
-                            </h4>
-                            <span>{{ article.date }}</span>
+                      <div class="media">
+                        <img :src="article.image" alt="img" />
+                        <div class="media-body">
+                          <div>
+                            <strong>{{ article.title }}</strong>
                           </div>
+                          <span>{{ article.date }}</span>
                         </div>
-                      </a>
+                      </div>
                     </router-link>
                   </div>
                 </div>

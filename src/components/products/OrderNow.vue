@@ -183,7 +183,7 @@
                                 @click="ordernow()"
                                 type="button"
                                 class="btn btn-lg text-white text-end"
-                                style="background-color: #a23017"
+                                style="background-color: #ef4823"
                               >
                                 ارسال
                               </button>

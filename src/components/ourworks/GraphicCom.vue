@@ -55,7 +55,6 @@
             v-for="item in filterapps"
             :key="item.id"
             data-aos="zoom-in"
-            :data-aos-delay="100 + i * 10"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="600"
             data-aos-once="1"

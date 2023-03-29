@@ -17,18 +17,9 @@
                         500
                       </h1>
                     </div>
-                    <!-- <video autoplay muted loop id="myVideo">
-                      <source
-                        src="@/assets/aaaaaaaaaaaaa.mp4"
-                        type="video/mp4"
-                      />
-                    </video> -->
                     <div class="contant_box_404">
                       <h3 class="h2">Internal server error</h3>
-
                       <p>We are currently trying to fix the problem.</p>
-
-                      <!-- <a href="" class="link_404">Go to Home</a> -->
                       <router-link
                         class="m-2 link_404 text-decoration-none"
                         :to="{ name: 'home' }"

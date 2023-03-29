@@ -25,46 +25,36 @@
           <span class="navbar-toggler-icon"></span>
         </span>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav mx-auto mb-2 mb-lg-0 p-0">
+          <div class="navbar-nav nav mx-auto mb-2 mb-lg-0 p-0">
             <router-link
               class="m-2 ms-lg-4 me-lg-4"
               :to="{ name: 'home' }"
               exact
-              ><a class="fw-bold">الرئيسة</a></router-link
+              ><span class="fw-bold">الرئيسة</span></router-link
             >
 
             <router-link class="m-2 ms-lg-4 me-lg-4" :to="{ name: 'ourwork' }"
-              ><a class="fw-bold">اعمالنا</a></router-link
+              ><span class="fw-bold">اعمالنا</span></router-link
             >
-            <!-- <router-link class="m-2" to="/services"
-              ><a class="fw-bold">خدماتنا</a></router-link
-            > -->
 
             <router-link class="m-2 ms-lg-4 me-lg-4" to="/products"
-              ><a class="fw-bold">منتجاتنا</a></router-link
+              ><span class="fw-bold">منتجاتنا</span></router-link
             >
             <router-link class="m-2 ms-lg-4 me-lg-4" to="/articles"
-              ><a class="fw-bold">المدونة</a></router-link
+              ><span class="fw-bold">المدونة</span></router-link
             >
 
             <router-link class="m-2 ms-lg-4 me-lg-4" to="/about"
-              ><a class="fw-bold">من نحن</a></router-link
+              ><span class="fw-bold">من نحن</span></router-link
             >
-          </ul>
+          </div>
           <router-link class="m-2 border-0" :to="{ name: 'ordernow' }" exact>
-            <a
-              href=""
+            <span
               style="background-color: #ef4823; height: 43px"
               class="btn border-0 text-light fw-bold rounded-pill py-2 px-4"
-              >اطلب الان</a
+              >اطلب الان</span
             >
           </router-link>
-          <!-- <a
-            href=""
-            style="background-color: #ef4823; height: 56px"
-            class="btn text-light fw-bold rounded-pill border-2 py-3 px-5"
-            >اطلب الان</a
-          > -->
         </div>
       </div>
     </nav>

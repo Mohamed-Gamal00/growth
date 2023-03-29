@@ -31,13 +31,18 @@
               </p>
               <a
                 href="#contact_us"
+                aria-label="contact"
                 style="background-color: #ef4823"
                 class="btn fw-bold mb-4 text-light rounded-pill border-2 py-3 px-5"
                 >تواصل معنا</a
               >
             </div>
             <div class="col-lg-6 text-center mt-sm-4 text-lg-start">
-              <img class="img-fluid" src="@/assets/sigm_b.png" alt="img" />
+              <img
+                class="img-fluid"
+                src="@/assets/new_img/webp/Gback.webp"
+                alt="img"
+              />
             </div>
           </div>
         </div>
@@ -77,7 +82,6 @@
                 separator=","
                 decimalSeparator="."
                 :autoinit="true"
-                @finished="alert(`Counting finished!`)"
               />
               <!-- <span class="counter">{{ counters.customers }}</span> -->
               <p class="fs-6 fw-bold">عملاء</p>
@@ -92,7 +96,6 @@
                 separator=","
                 decimalSeparator="."
                 :autoinit="true"
-                @finished="alert(`Counting finished!`)"
               />
               <!-- <span class="counter">{{ counters.employees }}</span> -->
               <p class="fs-6 fw-bold">موظفين</p>
@@ -107,7 +110,6 @@
                 separator=","
                 decimalSeparator="."
                 :autoinit="true"
-                @finished="alert(`Counting finished!`)"
               />
               <!-- <span class="counter">{{ counters.projects }}</span> -->
               <p class="fs-6 fw-bold">مشاريع منتهية</p>
@@ -128,7 +130,11 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-10">
             <span class="ms-3"
-              ><img src="@/assets/new_img/arrow.png" width="60" alt="img" />
+              ><img
+                src="@/assets/new_img/webp/arrow.webp"
+                width="60"
+                alt="img"
+              />
             </span>
             <span class="fs-4 fw-bold" style="font-weight: 900 !important">
               خطة عملنا
@@ -156,14 +162,14 @@
               <div class="col-md-5 align-content-center mb-md-">
                 <div class="text-center">
                   <img
-                    class="img-fluid"
-                    src="https://img.freepik.com/free-photo/closeup-business-woman-hand-typing-laptop-keyboard_1232-2750.jpg?size=626&ext=jpg&ga=GA1.2.1470621987.1662634783&semt=sph"
+                    class="img-fluid rounded-2"
+                    src="@/assets/new_img/webp/plan2.webp"
                     alt="img"
                   />
                 </div>
               </div>
               <div class="col-md-5 ps-md-0" style="box-sizing: content-box">
-                <p class="fs-4 fw-bold">GROWTH</p>
+                <p class="fs-4 fw-bold">مؤسسة نمو التقنية</p>
                 <ul class="p-0">
                   <li class="mt-3">فريق محترف ومتميز</li>
                   <li class="mt-3">
@@ -316,6 +322,7 @@
               >
                 <a
                   style="background-color: #ef4823; height: 43px"
+                  aria-label="more"
                   class="btn border-0 text-center text-light fw-bold rounded-pill py-2 px-4"
                   >المزيد</a
                 >
@@ -326,7 +333,7 @@
       </div>
     </div>
     <!-- اخر الاخبار -->
-    <div class="container-fluid mt-lg-5 mb-lg-5 pt-lg-5 pb-lg-5">
+    <div class="container-fluid mt-lg-5 pt-lg-5 pb-lg-5">
       <!-- text -->
       <div class="container">
         <div class="row d-flex justify-content-center">
@@ -392,7 +399,7 @@
                 exact
               >
                 <a
-                  href=""
+                  aria-label="more"
                   style="background-color: #ef4823; height: 43px"
                   class="btn border-0 text-center text-light fw-bold rounded-pill py-2 px-4"
                   >المزيد</a
@@ -619,7 +626,7 @@
                           class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2"
                         >
                           <img
-                            src="@/assets/contact_us.gif"
+                            src="@/assets/new_img/webp/contact_us.webp"
                             class="img-fluid"
                             height="400"
                             alt="Sample"
@@ -730,33 +737,21 @@ export default {
   methods: {
     async contactus() {
       this.loading = true;
-      // this.$swal("Hello Vue world!!!");
       this.v$.$validate();
       if (!this.v$.$error) {
-        // let result = await axios.post(
-        //   `https://backend.sigma-tech.agency/api/contact`,
-        //   this.contact
-        // );
         let result = await axios.post(
           `https://backend.sigma-tech.agency/api/contact`,
           this.contact
         );
         if (result.status == 200) {
           this.errorMessage = "";
-          // this.successMessage = "success fill";
           this.$swal.fire({
             icon: "success",
-            title: "جرع",
-            html: "<p style='text-align: center;color:green'> تم التسجيل بنجاح</p><br/><video src='https://backend.sigma-tech.agency/dash/%D9%85%D8%AF%D8%AD%D8%AA%20%D8%B4%D9%84%D8%A8%D9%8A%20_%20%D8%A8%D8%B1%D8%A7%D9%81%D9%88%20%D8%B9%D9%84%D9%8A%D9%83.mp4' autoplay style='width: 400px; height: 350px'></video>  ",
-            timer: 5000,
+            title: "تم...",
+            text: "عملية تسجيل ناجحة",
+            footer: "<p>تم تسجيل ردك بنجاح</p>",
+            timer: 2000,
           });
-          // this.$swal.fire({
-          //   icon: "success",
-          //   title: "تم...",
-          //   text: "عملية تسجيل ناجحة",
-          //   footer: "<p>تم تسجيل ردك بنجاح</p>",
-          //   timer: 2000,
-          // });
           setTimeout(() => {
             this.successMessage = "";
             this.errorMessage = "";
@@ -777,19 +772,13 @@ export default {
         }
       } else {
         this.successMessage = "";
-        // this.errorMessage = "fill faled";
-        // this.$swal.fire({
-        //   icon: "error",
-        //   title: "Oops...",
-        //   text: "عملية تسجيل خاطئة",
-        //   footer: "<p>املئ البيانات بطريقة صحيحة</p>",
-        //   timer: 2000,
-        // });
+        this.errorMessage = "fill faled";
         this.$swal.fire({
           icon: "error",
           title: "Oops...",
-          html: "<p style='text-align: center;color:red'>عملية تسجيل خاطئة</p><br/></video></video><video src='https://backend.sigma-tech.agency/dash/videoplaybackccccccccc.mp4' autoplay style='width: 400px; height: 350px'></video>  ",
-          timer: 5000,
+          text: "عملية تسجيل خاطئة",
+          footer: "<p>املئ البيانات بطريقة صحيحة</p>",
+          timer: 2000,
         });
       }
       this.loading = false;
@@ -909,15 +898,15 @@ a {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .home .articles {
-    height: 467px;
+    height: 340px;
     width: 388px;
   }
   .home .articles_img {
-    height: 329px;
+    height: 210px;
     width: 100%;
   }
   .home .articles_img img {
-    height: 283px;
+    height: 210px;
     width: 100%;
   }
 }

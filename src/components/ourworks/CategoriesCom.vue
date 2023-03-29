@@ -17,20 +17,13 @@
                 <div class="Categorie">
                   <div class="Categorie-overlay"></div>
                   <div class="Categorie-image">
-                    <img src="@/assets/Developer.png" alt="img" />
+                    <img src="@/assets/new_img/webp/apps.webp" alt="img" />
                   </div>
                   <div class="Categorie-details fadeIn-bottom">
-                    <h3 class="text-black fw-bold">Applications</h3>
-                    <p class="text-black fw-lg-bold">
-                      click to show all description
-                    </p>
-                    <!-- <router-link
-                      class="text-decoration-none text-black fw-bold"
-                      :to="{ name: 'apps', params: { id: app.id } }"
-                      >عرض المزيد</router-link
-                    > -->
+                    <h3 class="fw-bold">Applications</h3>
+                    <p class="fw-lg-bold">قم بالتعرف علي تفاصيل القسم</p>
                     <router-link
-                      class="text-decoration-none text-black fw-bold"
+                      class="text-decoration-none fw-bold text-white"
                       :to="{ name: 'apps' }"
                       >عرض المزيد</router-link
                     >
@@ -44,15 +37,13 @@
                 <div class="Categorie">
                   <div class="Categorie-overlay"></div>
                   <div class="Categorie-image">
-                    <img src="@/assets/Animation.png" alt="img" />
+                    <img src="@/assets/new_img/webp/motion.webp" alt="img" />
                   </div>
                   <div class="Categorie-details fadeIn-bottom">
-                    <h3 class="text-black fw-bold">motion</h3>
-                    <p class="text-black fw-bold">
-                      click to show all description
-                    </p>
+                    <h3 class="fw-bold">motion</h3>
+                    <p class="fw-bold">قم بالتعرف علي تفاصيل القسم</p>
                     <router-link
-                      class="text-decoration-none text-black fw-bold"
+                      class="text-decoration-none fw-bold text-white"
                       :to="{ name: 'motion' }"
                       >عرض المزيد</router-link
                     >
@@ -66,15 +57,13 @@
                 <div class="Categorie">
                   <div class="Categorie-overlay"></div>
                   <div class="Categorie-image">
-                    <img src="@/assets/graphic.png" alt="img" />
+                    <img src="@/assets/new_img/webp/graphic.webp" alt="img" />
                   </div>
                   <div class="Categorie-details fadeIn-bottom">
-                    <h3 class="text-black fw-bold">graphic</h3>
-                    <p class="text-black fw-bold">
-                      click to show all description
-                    </p>
+                    <h3 class="fw-bold">graphic</h3>
+                    <p class="fw-bold">قم بالتعرف علي تفاصيل القسم</p>
                     <router-link
-                      class="text-decoration-none text-black fw-bold"
+                      class="text-decoration-none fw-bold text-white"
                       :to="{ name: 'graphic' }"
                       >عرض المزيد</router-link
                     >
@@ -106,8 +95,6 @@ export default {
 
 .Categories .CatContainer {
   float: right;
-  /* border: 1px solid rgb(0, 121, 190); */
-  /* width: 50%; */
 }
 .Categories .Categorie-image {
   width: 100%;
@@ -126,7 +113,7 @@ export default {
 }
 
 .Categories .Categorie .Categorie-overlay {
-  background: #ef482341;
+  background: #833220d2;
   position: absolute;
   height: 100%;
   width: 100%;

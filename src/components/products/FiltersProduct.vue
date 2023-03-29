@@ -31,7 +31,6 @@
     <!-- FILTER BUTTONS -->
     <div class="filters text-center mb-3">
       <!-- SHOW ALL BUTTON -->
-      <!-- FILTER BUTTONS -->
       <div class="p-3" style="overflow: auto; white-space: nowrap">
         <button
           class="filter-button nav-link fw-bold bttn btn-border-3"
@@ -59,7 +58,6 @@
             v-for="item in filteredProducts"
             :key="item.id"
             data-aos="zoom-in"
-            :data-aos-delay="100 + i * 10"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="600"
             data-aos-once="1"
@@ -84,8 +82,6 @@
                   <h5 class="card-title fw-bold">
                     <strong>{{ item.title }}</strong>
                   </h5>
-                  <!-- description-->
-                  <!-- <p class="text-dark" v-html="item.desc"></p> -->
                 </div>
                 <div class="d-flex justify-content-between">
                   <button class="ordernow fw-bold">عرض المزيد</button>
@@ -121,23 +117,14 @@ export default {
   },
   methods: {
     filterPtsroducts(cat) {
-      // Set filteredCat data to
-      // selected product's name
       this.filteredCat = cat.id;
     },
-    // set filteredCat data to null
     showAll() {
       this.filteredCat = null;
     },
   },
   computed: {
-    // When filteredCat data changed
-    // filteredProducts computed property will
-    // automatically create new data model
-    // by filtering out unmatched products
     filteredProducts() {
-      // If filteredCat is equal to null
-      // display all data
       const data = this.filteredCat
         ? this.products.filter((item) => item.cat_id === this.filteredCat)
         : this.products;
@@ -238,7 +225,7 @@ export default {
 }
 
 .services.item {
-  margin-bottom: 2%; /* (100-32*3)/2 */
+  margin-bottom: 2%;
 }
 
 /***********************card style*******************************/
@@ -281,7 +268,6 @@ export default {
     width: 48.33333%;
   }
   .services .services_img {
-    /* height: 150px; */
     width: 100%;
     border-bottom-left-radius: 30px;
     object-fit: cover;

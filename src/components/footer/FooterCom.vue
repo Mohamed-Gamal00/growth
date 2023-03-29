@@ -22,32 +22,36 @@
                       />
                     </span>
                     <p>
-                      Growth رائدين في مجال التقنيات الحديثة والتسويق الإلكتروني
-                      لتقديم المزيد من فرص زيادة الأرباح في ظل التطور التكنولوجي
-                      نقدم دعم الأنشطة التجارية المتنوعة
+                      مؤسسة نمو التقنية رائدين في مجال التقنيات الحديثة والتسويق
+                      الإلكتروني لتقديم المزيد من فرص زيادة الأرباح في ظل التطور
+                      التكنولوجي نقدم دعم الأنشطة التجارية المتنوعة
                     </p>
                     <div class="d-flex justify-content-center pt-2">
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
+                        aria-label="facebook"
                         href="https://www.facebook.com/SIGMA.BSolutions?mibextid=LQQJ4d"
                         ><FontAwesome :icon="['fab', 'facebook']"
                       /></a>
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
+                        aria-label="Twitter"
                         href="https://twitter.com/sigma_bsolution?s=21&t=40ETF1X4eEMpXw52d1mfaw"
                         ><FontAwesome :icon="['fab', 'twitter']"
                       /></a>
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
+                        aria-label="instagram"
                         href="https://instagram.com/sigma.bsolutions?igshid=Zjc2ZTc4Nzk="
                         ><FontAwesome :icon="['fab', 'instagram']"
                       /></a>
                       <a
                         class="btnn btn-outline-light btn-social"
                         target="_blank"
+                        aria-label="linkedin"
                         href="https://www.linkedin.com/company/sigma-business/"
                         ><FontAwesome :icon="['fab', 'linkedin']"
                       /></a>

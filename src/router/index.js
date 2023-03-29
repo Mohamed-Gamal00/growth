@@ -90,7 +90,7 @@ const routes = [
     component: ServerError,
   },
   {
-    path: "/:catchAll(.*)",
+    path: "/:catchAll(.*)*",
     name: "errorpage",
     component: ErrorView,
   },
