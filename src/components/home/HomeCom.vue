@@ -594,21 +594,6 @@
                                 >
                               </div>
                             </div>
-                            <!-- success & error messeg -->
-                            <div class="row g-3 align-items-center">
-                              <div
-                                class="col-auto d-block mx-auto m-3 alert alert-success"
-                                v-if="successMessage.length > 0"
-                              >
-                                {{ successMessage }}
-                              </div>
-                              <div
-                                class="col-auto d-block mx-auto m-3 alert alert-danger"
-                                v-if="errorMessage.length > 0"
-                              >
-                                {{ errorMessage }}
-                              </div>
-                            </div>
                             <!-- ارسال -->
                             <div class="text-start mb-3 mt-4 mb-lg-4">
                               <button
@@ -669,7 +654,6 @@ export default {
       loading: false,
       isOpen: false,
       successMessage: "",
-      errorMessage: "",
       v$: useValidate(),
       counters: [],
       plans: [],
@@ -705,29 +689,25 @@ export default {
     this.loading = true;
     /* counter */
     let result = await axios
-      .get(`https://backend.sigma-tech.agency/api/info`)
+      .get(`https://admin.growth-tech.co/api/info`)
       .catch(() => this.$router.push({ path: "/servererror" }));
     if (result.status == 200) {
       this.counters = result.data.info;
     }
     /* servcies */
-    let services = await axios.get(
-      `https://backend.sigma-tech.agency/api/services`
-    );
+    let services = await axios.get(`https://admin.growth-tech.co/api/services`);
     // .catch(() => this.$router.push({ name: "servererror" }));
     if (services.status == 200) {
       this.services = services.data.services;
     }
     /* apps */
-    let apps = await axios.get(`https://backend.sigma-tech.agency/api/apps`);
+    let apps = await axios.get(`https://admin.growth-tech.co/api/apps`);
     // .catch(() => this.$router.push({ name: "servererror" }));
     if (result.status == 200) {
       this.apps = apps.data.apps.splice(0, 3);
     }
     /* articles */
-    let articles = await axios.get(
-      `https://backend.sigma-tech.agency/api/articles`
-    );
+    let articles = await axios.get(`https://admin.growth-tech.co/api/articles`);
     // .catch(() => this.$router.push({ name: "servererror" }));
     if (result.status == 200) {
       this.articles = articles.data.data.splice(0, 3);
@@ -740,11 +720,10 @@ export default {
       this.v$.$validate();
       if (!this.v$.$error) {
         let result = await axios.post(
-          `https://backend.sigma-tech.agency/api/contact`,
+          `https://admin.growth-tech.co/api/contact`,
           this.contact
         );
         if (result.status == 200) {
-          this.errorMessage = "";
           this.$swal.fire({
             icon: "success",
             title: "تم...",
@@ -754,7 +733,6 @@ export default {
           });
           setTimeout(() => {
             this.successMessage = "";
-            this.errorMessage = "";
             this.contact.name = "";
             this.contact.number = "";
             this.contact.email = "";
@@ -766,13 +744,8 @@ export default {
               (this.v$.contact.subject.$errors[0].$message = ""),
               (this.v$.contact.message.$errors[0].$message = "");
           }, 2000);
-        } else {
-          this.successMessage = "";
-          this.errorMessage = "some thing wrong";
         }
       } else {
-        this.successMessage = "";
-        this.errorMessage = "fill faled";
         this.$swal.fire({
           icon: "error",
           title: "Oops...",

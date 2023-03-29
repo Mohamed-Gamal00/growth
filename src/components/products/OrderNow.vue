@@ -258,7 +258,7 @@ export default {
     async getcat() {
       this.loading = true;
       let category = await axios.get(
-        `https://backend.sigma-tech.agency/api/products`
+        `https://admin.growth-tech.co/api/products`
       );
       // .catch(this.$router.push({ path: "servererror" }));
 
@@ -272,7 +272,7 @@ export default {
       this.v$.$validate();
       if (!this.v$.$error) {
         let result = await axios.post(
-          `https://backend.sigma-tech.agency/api/order`,
+          `https://admin.growth-tech.co/api/order`,
           this.contact
         );
         if (result.status == 200) {

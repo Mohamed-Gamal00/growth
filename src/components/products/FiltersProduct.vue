@@ -134,7 +134,7 @@ export default {
   async mounted() {
     this.loading = true;
     let result = await axios
-      .get(`https://backend.sigma-tech.agency/api/products`)
+      .get(`https://admin.growth-tech.co/api/products`)
       .catch(() => this.$router.push({ path: "/servererror" }));
     if (result.status == 200) {
       this.cats = result.data.cats;

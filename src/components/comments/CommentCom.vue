@@ -61,7 +61,7 @@ export default {
   },
   async mounted() {
     let result = await axios
-      .get(`https://backend.sigma-tech.agency/api/app/${this.id}`)
+      .get(`https://admin.growth-tech.co/api/app/${this.id}`)
       .catch(() => this.$router.push({ path: "/servererror" }));
     if (result.status == 200) {
       this.app = result.data.app;

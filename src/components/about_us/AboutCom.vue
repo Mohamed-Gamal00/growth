@@ -515,7 +515,7 @@ export default {
   async mounted() {
     this.loading = true;
     let result = await axios
-      .get(`https://backend.sigma-tech.agency/api/info`)
+      .get(`https://admin.growth-tech.co/api/info`)
       .catch(() => this.$router.push({ path: "/servererror" }));
     if (result.status == 200) {
       this.counters = result.data.info;
@@ -529,7 +529,7 @@ export default {
       this.v$.$validate();
       if (!this.v$.$error) {
         let result = await axios.post(
-          `https://backend.sigma-tech.agency/api/contact`,
+          `https://admin.growth-tech.co/api/contact`,
           this.contact
         );
         if (result.status == 200) {

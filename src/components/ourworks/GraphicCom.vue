@@ -111,7 +111,7 @@ export default {
   async mounted() {
     this.loading = true;
     let result = await axios.get(
-      `https://backend.sigma-tech.agency/api/graphics`
+      `https://admin.growth-tech.co/api/graphics`
     );
     if (result.status == 200) {
       this.cats = result.data.cats;

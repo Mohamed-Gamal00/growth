@@ -74,7 +74,7 @@ export default {
     };
   },
   // async mounted() {
-  //   let result = await axios.get(`https://backend.sigma-tech.agency/api/team`);
+  //   let result = await axios.get(`https://admin.growth-tech.co/api/team`);
   //   if (result.status == 200) {
   //     this.members = result.data.team;
   //   }

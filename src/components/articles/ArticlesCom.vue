@@ -127,7 +127,7 @@ export default {
   },
   methods: {
     async fetcharticles(page_url) {
-      page_url = page_url || `https://backend.sigma-tech.agency/api/articles`;
+      page_url = page_url || `https://admin.growth-tech.co/api/articles`;
       this.loading = true;
       let result = await axios
         .get(page_url)
