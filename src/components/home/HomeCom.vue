@@ -12,22 +12,25 @@
         <div class="col-md-10">
           <div class="row align-items-center justify-content-between mb-2">
             <div class="col-lg-5 fw-bold align-middle text-center text-lg-end">
-              <h2
+              <h1
                 class="mb-4 font_h1 fw-bold"
                 style="font-weight: 900 !important"
               >
-                <span style="color: #ef4823">
-                  <img
-                    src="@/assets/new_img/arabic.png"
-                    width="100"
-                    height="40"
-                    alt="img"
-                /></span>
-                رائدين في مجال التقنيات الحديثة والتسويق الإلكتروني
-              </h2>
-              <p class="pb-3 font_p_home" style="color: #1f1e1e">
-                لتقديم المزيد من فرص زيادة الأرباح في ظل التطور التكنولوجي وفتح
-                أسواق العمل الجديدة نقدم دعم الأنشطة التجارية المتنوعة
+                جروث تك رائدين في تصميم المواقع والتسويق الالكتروني
+              </h1>
+              <p class="pb-3" style="color: #1f1e1e">
+                هل تريد أن تنجح في عالم الأعمال الرقمي؟ تبحث عن زيادة في
+                المبيعات؟ ترغب في الوصول لمزيد من العملاء؟ نحن شركة نمو التقنية
+                نقدم لك كل ما تحتاجه لتحقق أهدافك.<strong>
+                  تصميم المواقع، انشاء تطبيقات الجوال، انشاء متاجر
+                  الكترونية</strong
+                >
+                بتجربة مستخدم احترافية، مع تهيئة لتحسين الظهور في محركات البحث.
+                نقدم خدمات التسويق الالكتروني المتكاملة فريقنا المحترف والمتخصص
+                يعمل بجد لتحويل أفكارك إلى حقيقة ويضمن لك الوصول لجمهورك
+                المستهدف بطرق فعالة ومبتكرة. اتصل بنا الآن واحصل على الخدمات
+                التقنية والبرمجية والتسويقية التي تحتاجها لتحقيق نجاحك على
+                الإنترنت والوصول لأهدافك العملية.
               </p>
               <a
                 href="#contact_us"
@@ -40,9 +43,328 @@
             <div class="col-lg-6 text-center mt-sm-4 text-lg-start">
               <img
                 class="img-fluid"
-                src="@/assets/new_img/webp/Gback.webp"
+                v-lazy="Gback"
+                height="516"
+                width="451"
                 alt="img"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- text & image خطة عملنا -->
+    <div
+      data-aos="fade-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+      class="container-fluid mt-lg-5 pt-lg-4"
+      style="background-color: #f8faff"
+    >
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+            <span class="ms-3"
+              ><img v-lazy="arrow" width="60" height="60" alt="img" />
+            </span>
+            <span class="fs-4 fw-bold" style="font-weight: 900 !important">
+              خطة عملنا
+            </span>
+            <div class="mt-lg-4 our_plane">
+              <div class="box" v-for="plan in plans" :key="plan.id">
+                <img
+                  :src="plan.image"
+                  alt="service"
+                  width="100"
+                  height="100"
+                  class="service-img rounded-circle"
+                />
+                <h6 class="mt-lg-3 fw-bold">{{ plan.name }}</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- text image -->
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+            <div
+              class="row d-flex justify-content-around align-items-center g-0 position-relative"
+            >
+              <div class="col-md-5 align-content-center mb-md-">
+                <div class="text-center">
+                  <img
+                    class="img-fluid rounded-2"
+                    v-lazy="plan"
+                    height="327"
+                    width="327"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="col-md-5 ps-md-0" style="box-sizing: content-box">
+                <p class="fs-4 fw-bold">مؤسسة نمو التقنية</p>
+                <ul class="p-0">
+                  <li class="mt-3">فريق محترف ومتميز</li>
+                  <li class="mt-3">
+                    جودة عالية في تصميم وتطوير الحلول التقنية.
+                  </li>
+                  <li class="mt-3">أكواد برمجية عالية الجودة</li>
+                  <li class="mt-3">
+                    حماية متكاملة للمواقع والمتاجر والتطبيقات
+                  </li>
+                  <li class="mt-3">أسعار تنافسية</li>
+                  <li class="mt-3">الالتزام بمواعيد تسليم المشاريع والخدمات</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- بارعين في اتقديم تلك الخدمات -->
+    <div class="container-fluid mt-lg-5 mb-lg-5 pb-lg-5 pt-lg-5">
+      <div class="container">
+        <!-- text -->
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+            <h3
+              class="text-end fw-bold background"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="600"
+              data-aos-once="false"
+            >
+              <strong>بارعين في تقديم تلك الخدمات</strong>
+            </h3>
+            <p
+              class="fw-bold lh-lg"
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="600"
+              data-aos-delay="100"
+              data-aos-once="false"
+            >
+              نساعدك في تحقيق أهدافك والمساهمة في جعل فكرتك حية على أرض الواقع،
+              بتقديم خدمات تقنية وتسويقية احترافية.
+            </p>
+          </div>
+        </div>
+        <!-- services-->
+        <div class="row mt-3 d-flex justify-content-center">
+          <div class="col-md-10">
+            <div class="containerSer">
+              <div v-for="service in services" :key="service.id" class="rowSer">
+                <div class="service box">
+                  <img
+                    :src="service.image"
+                    alt="serviceimage"
+                    width="100"
+                    height="100"
+                    class="service-img rounded-circle"
+                  />
+                  <h2 class="mt-lg-3 fs-4">{{ service.name }}</h2>
+                  <p v-snip="3">{{ service.desc }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- اجدد المشاريع -->
+    <div
+      class="container-fluid mt-lg-5 pt-lg-5"
+      style="background-color: #f8faff"
+    >
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <!-- text -->
+          <div class="col-md-10">
+            <h3
+              class="text-end background fw-bold"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500"
+              data-aos-delay="100"
+              data-aos-once="false"
+            >
+              <strong>اجدد المشاريع</strong>
+            </h3>
+            <div style="width: 100%">
+              <p
+                class="fw-bold lh-lg"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="600"
+                data-aos-delay="100"
+                data-aos-once="false"
+              >
+                حققنا الكثير من الإنجازات مع شركاء النجاح من عملائنا، ونفخر
+                دائمًا بكل ما نقدمه، انضم إلينا الآن. ( نبذة عن التطبيقات
+                وغيرها...........)
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- apps -->
+        <div class="container-fluid" style="background-color: #f8faff">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10">
+              <div
+                class="containerr"
+                v-for="(app, i) in apps"
+                :key="i"
+                data-aos="zoom-in"
+                :data-aos-delay="100 + i * 10"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="600"
+                data-aos-once="1"
+              >
+                <div class="content">
+                  <a>
+                    <router-link
+                      class="text-decoration-none fw-bold"
+                      :to="{ name: 'app', params: { id: app.id } }"
+                    >
+                      <div class="content-overlay"></div>
+                      <img
+                        class="content-image"
+                        v-if="app.image"
+                        :src="app.image"
+                        alt="img"
+                      />
+                      <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">{{ app.title }}</h3>
+                        <p class="content-text">click to show more details</p>
+                        <router-link
+                          class="text-decoration-none fw-bold"
+                          :to="{ name: 'app', params: { id: app.id } }"
+                          >عرض المزيد</router-link
+                        >
+                      </div>
+                    </router-link>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <router-link
+                class="m-5 p-3 border-0 text-center"
+                :to="{ name: 'ourwork' }"
+                exact
+              >
+                <span
+                  style="background-color: #ef4823; height: 43px"
+                  class="btn border-0 text-center text-light fw-bold rounded-pill py-2 px-4"
+                  >المزيد</span
+                >
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- اخر الاخبار -->
+    <div class="container-fluid mt-lg-5 pt-lg-5 pb-lg-5">
+      <!-- text -->
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+            <h3
+              class="text-end fw-bold background"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500"
+              data-aos-delay="100"
+              data-aos-once="false"
+            >
+              <strong>اخر الاخبار</strong>
+            </h3>
+            <p
+              class="fw-bold lh-lg"
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="600"
+              data-aos-delay="100"
+              data-aos-once="false"
+            >
+              اطلع على المزيد من تفاصيل الخدمات التي نقدمها لكم. (المقالات)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- articles -->
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+            <div class="row justify-content-center justify-content-lg-start">
+              <div
+                class="col-md-6 col-lg-4 p-1"
+                v-for="article in articles"
+                :key="article.id"
+              >
+                <router-link
+                  :to="{ name: 'article', params: { id: article.id } }"
+                >
+                  <div class="card border-0" style="width: 100%">
+                    <div class="articles_img" style="overflow: hidden">
+                      <img
+                        :src="article.image"
+                        alt="img"
+                        height="197"
+                        width="300"
+                        class="card-img-top rounded"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text mb-1">
+                        <strong>{{ article.title }}</strong>
+                      </p>
+                      <router-link
+                        :to="{ name: 'article', params: { id: article.id } }"
+                        >عرض المزيد</router-link
+                      >
+                    </div>
+                  </div>
+                </router-link>
+                <!-- <div
+                  class="card articles p-lg-3 border-0 rounded-0"
+                  style="width: 100%"
+                >
+                  <div class="articles_img" style="overflow: hidden">
+                    <img
+                      :src="article.image"
+                      alt="img"
+                      height="177"
+                      width="300"
+                      class="rounded"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title fw-bold">
+                      <strong>{{ article.title }}</strong>
+                    </p>
+                    <p class="card-text fw-bold">{{ article.date }}</p>
+                    <router-link
+                      :to="{ name: 'article', params: { id: article.id } }"
+                      >عرض المزيد</router-link
+                    >
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <router-link
+                class="m-5 p-3 border-0 text-center"
+                :to="{ name: 'articles' }"
+                exact
+              >
+                <span
+                  style="background-color: #ef4823; height: 43px"
+                  class="btn border-0 text-center text-light fw-bold rounded-pill py-2 px-4"
+                  >المزيد</span
+                >
+              </router-link>
             </div>
           </div>
         </div>
@@ -118,298 +440,6 @@
         </div>
       </div>
     </div>
-    <!-- text & image خطة عملنا -->
-    <div
-      data-aos="fade-up"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="1500"
-      class="container-fluid mt-lg-5 pt-lg-5"
-      style="background-color: #f8faff"
-    >
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-10">
-            <span class="ms-3"
-              ><img
-                src="@/assets/new_img/webp/arrow.webp"
-                width="60"
-                alt="img"
-              />
-            </span>
-            <span class="fs-4 fw-bold" style="font-weight: 900 !important">
-              خطة عملنا
-            </span>
-            <div class="mt-lg-4 our_plane mb-lg-5">
-              <div class="box" v-for="plan in plans" :key="plan">
-                <img
-                  :src="plan.image"
-                  alt="service"
-                  width="100"
-                  height="100"
-                  class="service-img rounded-circle"
-                />
-                <h6 class="mt-lg-3 fw-bold">{{ plan.name }}</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- text image -->
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-10">
-            <div
-              class="row d-flex justify-content-around align-items-center g-0 position-relative"
-            >
-              <div class="col-md-5 align-content-center mb-md-">
-                <div class="text-center">
-                  <img
-                    class="img-fluid rounded-2"
-                    src="@/assets/new_img/webp/plan2.webp"
-                    alt="img"
-                  />
-                </div>
-              </div>
-              <div class="col-md-5 ps-md-0" style="box-sizing: content-box">
-                <p class="fs-4 fw-bold">مؤسسة نمو التقنية</p>
-                <ul class="p-0">
-                  <li class="mt-3">فريق محترف ومتميز</li>
-                  <li class="mt-3">
-                    جودة عالية في تصميم وتطوير الحلول التقنية.
-                  </li>
-                  <li class="mt-3">أكواد برمجية عالية الجودة</li>
-                  <li class="mt-3">
-                    حماية متكاملة للمواقع والمتاجر والتطبيقات
-                  </li>
-                  <li class="mt-3">أسعار تنافسية</li>
-                  <li class="mt-3">الالتزام بمواعيد تسليم المشاريع والخدمات</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- بارعين في اتقديم تلك الخدمات -->
-    <div class="container-fluid mt-lg-5 mb-lg-5 pb-lg-5 pt-lg-5">
-      <div class="container">
-        <!-- text -->
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-10">
-            <h1
-              class="text-end fw-bold background"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="600"
-              data-aos-once="false"
-            >
-              <strong>بارعين في تقديم تلك الخدمات</strong>
-            </h1>
-            <p
-              class="fw-bold lh-lg"
-              data-aos="zoom-in"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="600"
-              data-aos-delay="100"
-              data-aos-once="false"
-            >
-              نساعدك في تحقيق أهدافك والمساهمة في جعل فكرتك حية على أرض الواقع،
-              بتقديم خدمات تقنية وتسويقية احترافية.
-            </p>
-          </div>
-        </div>
-        <!-- services-->
-        <div class="row mt-3 d-flex justify-content-center">
-          <div class="col-md-10">
-            <div class="containerSer">
-              <div v-for="service in services" :key="service" class="rowSer">
-                <div class="service box">
-                  <img
-                    :src="service.image"
-                    alt="serviceimage"
-                    width="100"
-                    height="100"
-                    class="service-img rounded-circle"
-                  />
-                  <h2 class="mt-lg-3 fs-4">{{ service.name }}</h2>
-                  <p v-snip="3">{{ service.desc }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- اجدد المشاريع -->
-    <div
-      class="container-fluid mt-lg-5 pt-lg-5"
-      style="background-color: #f8faff"
-    >
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <!-- text -->
-          <div class="col-md-10">
-            <h1
-              class="text-end background fw-bold"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
-              data-aos-delay="100"
-              data-aos-once="false"
-            >
-              <strong>اجدد المشاريع</strong>
-            </h1>
-            <div style="width: 100%">
-              <p
-                class="fw-bold lh-lg"
-                data-aos="zoom-in"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="600"
-                data-aos-delay="100"
-                data-aos-once="false"
-              >
-                حققنا الكثير من الإنجازات مع شركاء النجاح من عملائنا، ونفخر
-                دائمًا بكل ما نقدمه، انضم إلينا الآن. ( نبذة عن التطبيقات
-                وغيرها...........)
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- apps -->
-        <div class="container-fluid" style="background-color: #f8faff">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-10">
-              <div
-                class="containerr"
-                v-for="(app, i) in apps"
-                :key="i"
-                data-aos="zoom-in"
-                :data-aos-delay="100 + i * 10"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="600"
-                data-aos-once="1"
-              >
-                <div class="content">
-                  <a>
-                    <router-link
-                      class="text-decoration-none fw-bold"
-                      :to="{ name: 'app', params: { id: app.id } }"
-                    >
-                      <div class="content-overlay"></div>
-                      <img
-                        class="content-image"
-                        v-if="app.image"
-                        :src="app.image"
-                        alt="img"
-                      />
-                      <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">{{ app.title }}</h3>
-                        <p class="content-text">click to show more details</p>
-                        <router-link
-                          class="text-decoration-none fw-bold"
-                          :to="{ name: 'app', params: { id: app.id } }"
-                          >عرض المزيد</router-link
-                        >
-                      </div>
-                    </router-link>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <router-link
-                class="m-5 p-3 border-0 text-center"
-                :to="{ name: 'ourwork' }"
-                exact
-              >
-                <a
-                  style="background-color: #ef4823; height: 43px"
-                  aria-label="more"
-                  class="btn border-0 text-center text-light fw-bold rounded-pill py-2 px-4"
-                  >المزيد</a
-                >
-              </router-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- اخر الاخبار -->
-    <div class="container-fluid mt-lg-5 pt-lg-5 pb-lg-5">
-      <!-- text -->
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-10">
-            <h1
-              class="text-end fw-bold background"
-              data-aos="fade-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="500"
-              data-aos-delay="100"
-              data-aos-once="false"
-            >
-              <strong>اخر الاخبار</strong>
-            </h1>
-            <p
-              class="fw-bold lh-lg"
-              data-aos="zoom-in"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="600"
-              data-aos-delay="100"
-              data-aos-once="false"
-            >
-              اطلع على المزيد من تفاصيل الخدمات التي نقدمها لكم. (المقالات)
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- articles -->
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-10">
-            <div class="row">
-              <div
-                class="article_container col-md-6 col-lg-4 p-1"
-                v-for="article in articles"
-                :key="article"
-              >
-                <div
-                  class="card articles p-lg-3 border-0 rounded-0"
-                  style="width: 100%"
-                >
-                  <div class="articles_img" style="overflow: hidden">
-                    <img :src="article.image" alt="img" />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold">
-                      <strong>{{ article.title }}</strong>
-                    </h5>
-                    <p class="card-text fw-bold">{{ article.date }}</p>
-                    <!-- <a href="#" class="btn btn-link fw-bold m-0 p-0">عرض المزيد</a> -->
-                    <router-link
-                      :to="{ name: 'article', params: { id: article.id } }"
-                      >عرض المزيد</router-link
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <router-link
-                class="m-5 p-3 border-0 text-center"
-                :to="{ name: 'articles' }"
-                exact
-              >
-                <a
-                  aria-label="more"
-                  style="background-color: #ef4823; height: 43px"
-                  class="btn border-0 text-center text-light fw-bold rounded-pill py-2 px-4"
-                  >المزيد</a
-                >
-              </router-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- الشركاء -->
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -426,7 +456,7 @@
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-md-10">
-          <h1
+          <h3
             class="text-end fw-bold background"
             data-aos="fade-up"
             data-aos-easing="ease-out-cubic"
@@ -434,7 +464,7 @@
             data-aos-once="false"
           >
             <strong>تواصل معنا</strong>
-          </h1>
+          </h3>
           <p
             class="fw-bold lh-lg"
             data-aos="zoom-in"
@@ -581,7 +611,7 @@
                                 >
                                 <textarea
                                   class="form-control"
-                                  id="textAreaExample1"
+                                  id="textAreaExample"
                                   rows="4"
                                   v-model="contact.message"
                                 ></textarea>
@@ -611,9 +641,10 @@
                           class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2"
                         >
                           <img
-                            src="@/assets/new_img/webp/contact_us.webp"
+                            v-lazy="contac"
                             class="img-fluid"
                             height="400"
+                            width="400"
                             alt="Sample"
                           />
                         </div>
@@ -651,6 +682,11 @@ export default {
   },
   data() {
     return {
+      Gback: require("@/assets/new_img/webp/Gback.webp"),
+      arabic: require("@/assets/new_img/arabic.png"),
+      arrow: require("@/assets/new_img/webp/arrow.webp"),
+      plan: require("@/assets/new_img/webp/plan2.webp"),
+      contac: require("@/assets/new_img/webp/contact_us.webp"),
       loading: false,
       isOpen: false,
       successMessage: "",
@@ -776,6 +812,7 @@ input[type="number"] {
 a {
   color: #212a34 !important;
   font-weight: bold !important;
+  text-decoration: none !important;
 }
 .home .counter {
   font-size: 60px;
@@ -821,34 +858,6 @@ a {
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
   }
-  .home .articles_img {
-    height: 220px;
-  }
-  .home .articles_img img {
-    width: 100%;
-    height: 220px;
-  }
-}
-@media screen and (min-width: 900px) {
-  .home .containerr {
-    width: 33.33333%;
-  }
-  /* اجدد المشاريع */
-  .home .content-details h3 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 200;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
-  }
-  .home .articles_img {
-    height: 280px;
-  }
-  .home .articles_img img {
-    height: 280px;
-    width: 100%;
-  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -865,21 +874,6 @@ a {
   }
   .home .articles_img img {
     height: 225px;
-    width: 100%;
-  }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .home .articles {
-    height: 340px;
-    width: 388px;
-  }
-  .home .articles_img {
-    height: 210px;
-    width: 100%;
-  }
-  .home .articles_img img {
-    height: 210px;
     width: 100%;
   }
 }

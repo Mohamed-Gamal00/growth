@@ -13,6 +13,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+/* lazyload */
+import VueLazyload from "vue-lazyload";
+/* sweetalert */
 import VueSweetalert2 from "vue-sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import VueSnip from "vue-snip";
@@ -23,6 +26,7 @@ library.add(fas, far, fab);
 createApp(App)
   .use(store)
   .use(VueViewer)
+  .use(VueLazyload)
   .use(VueSweetalert2)
   .use(VueSnip)
   .component("FontAwesome", FontAwesomeIcon)

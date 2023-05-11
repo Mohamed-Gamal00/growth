@@ -4,13 +4,13 @@
     style="background-color: #1f1e1e; direction: rtl"
   >
     <div class="row d-flex justify-content-center">
-      <div class="col-md-9">
+      <div class="col-md-12">
         <div class="row">
           <footer>
             <!-- Footer Start -->
             <div class="text-light" style="margin-top: 6rem">
-              <div class="container py-5">
-                <div class="row g-5">
+              <div class="container-fluid">
+                <div class="row">
                   <!--Growth-->
                   <div class="col-md-6 col-lg-3 text-center">
                     <span class="">
@@ -18,6 +18,7 @@
                         src="@/assets/new_img/white.png"
                         style="position: relative; bottom: 30px"
                         width="100"
+                        height="50"
                         alt="img"
                       />
                     </span>
@@ -26,40 +27,10 @@
                       الإلكتروني لتقديم المزيد من فرص زيادة الأرباح في ظل التطور
                       التكنولوجي نقدم دعم الأنشطة التجارية المتنوعة
                     </p>
-                    <div class="d-flex justify-content-center pt-2">
-                      <a
-                        class="btnn btn-outline-light btn-social"
-                        target="_blank"
-                        aria-label="facebook"
-                        href="https://www.facebook.com/SIGMA.BSolutions?mibextid=LQQJ4d"
-                        ><FontAwesome :icon="['fab', 'facebook']"
-                      /></a>
-                      <a
-                        class="btnn btn-outline-light btn-social"
-                        target="_blank"
-                        aria-label="Twitter"
-                        href="https://twitter.com/sigma_bsolution?s=21&t=40ETF1X4eEMpXw52d1mfaw"
-                        ><FontAwesome :icon="['fab', 'twitter']"
-                      /></a>
-                      <a
-                        class="btnn btn-outline-light btn-social"
-                        target="_blank"
-                        aria-label="instagram"
-                        href="https://instagram.com/sigma.bsolutions?igshid=Zjc2ZTc4Nzk="
-                        ><FontAwesome :icon="['fab', 'instagram']"
-                      /></a>
-                      <a
-                        class="btnn btn-outline-light btn-social"
-                        target="_blank"
-                        aria-label="linkedin"
-                        href="https://www.linkedin.com/company/sigma-business/"
-                        ><FontAwesome :icon="['fab', 'linkedin']"
-                      /></a>
-                    </div>
                   </div>
                   <!-- الشركة -->
-                  <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white text-center mb-4">الشركة</h5>
+                  <div class="col-md-6 col-lg-1">
+                    <p class="text-white text-center mb-4">الشركة</p>
                     <router-link
                       class="btn_btn_link text-decoration-none"
                       :to="{ name: 'home' }"
@@ -80,44 +51,6 @@
                       :to="{ name: 'articles' }"
                       >المدونة</router-link
                     >
-                  </div>
-                  <!-- العمل -->
-                  <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white text-center mb-4">العمل</h5>
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
-                    >
-                      تصميم تطبيقات الهاتف
-                    </router-link>
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
-                      >تصميم مواقع</router-link
-                    >
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
-                      >تسويق الكتروني</router-link
-                    >
-
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'ourwork' }"
-                      >موشن جرافيك</router-link
-                    >
-                  </div>
-                  <!-- المزيد -->
-                  <div class="col-md-6 text-center col-lg-3">
-                    <h5 class="text-white text-center mb-4">المزيد</h5>
-                    <p>سياسة الخصوصية</p>
-                    <p>الشروط والاحكام</p>
-                    <router-link
-                      class="btn_btn_link text-decoration-none"
-                      :to="{ name: 'about' }"
-                    >
-                      تواصل معنا
-                    </router-link>
                     <router-link
                       class="btn_btn_link text-decoration-none"
                       :to="{ name: 'about' }"
@@ -125,19 +58,160 @@
                       من نحن
                     </router-link>
                   </div>
+                  <!-- العمل -->
+                  <div class="col-md-6 col-lg-2">
+                    <h5 class="text-white text-center mb-4">خدمتنا</h5>
+                    <router-link
+                      class="btn_btn_link text-decoration-none"
+                      :to="{ name: 'apps' }"
+                    >
+                      التطبيقات والمواقع
+                    </router-link>
+                    <router-link
+                      class="btn_btn_link text-decoration-none"
+                      :to="{ name: 'graphic' }"
+                      >التصميمات</router-link
+                    >
+
+                    <router-link
+                      class="btn_btn_link text-decoration-none"
+                      :to="{ name: 'motion' }"
+                      >موشن جرافيك</router-link
+                    >
+                  </div>
+                  <!-- المزيد -->
+                  <div class="col-md-6 text-center col-lg-3">
+                    <h5 class="text-white text-center mb-4">اتصل بنا</h5>
+                    <p>97144426518.</p>
+                    <p>growth@125.com</p>
+                    <!-- <p>سياسة الخصوصية</p>
+                    <p>الشروط والاحكام</p> -->
+                  </div>
+                  <!-- تواصل معنا  -->
+                  <div class="col-md-6 text-center col-lg-3">
+                    <p>احصل علي مزيد من العملاء المحتملين</p>
+                    <form class="mx-1 mx-md-12" style="direction: rtl">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <!--  الاسم -->
+                          <div class="d-flex flex-row align-items-center mb-4">
+                            <div class="form-outline flex-fill mb-0">
+                              <input
+                                type="text"
+                                id="form3Example1c"
+                                placeholder="الاسم"
+                                class="form-control border-top-0 border-start-0 border-end-0"
+                                v-model="contact.name"
+                              />
+                              <span
+                                class="erroe-feedbak"
+                                v-if="v$.contact.name.$error"
+                                >{{ v$.contact.name.$errors[0].$message }}</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <!-- رقم الهاتف -->
+                          <div class="d-flex flex-row align-items-center mb-4">
+                            <div class="form-outline flex-fill mb-0">
+                              <input
+                                type="number"
+                                placeholder="رقم الهاتف"
+                                class="form-control border-top-0 border-start-0 border-end-0"
+                                v-model="contact.number"
+                              />
+                              <span
+                                class="erroe-feedbak"
+                                v-if="v$.contact.number.$error"
+                                >{{
+                                  v$.contact.number.$errors[0].$message
+                                }}</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- البريد الالكتروني -->
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          <input
+                            type="email"
+                            placeholder="البريد الالكتروني"
+                            class="form-control border-top-0 border-start-0 border-end-0"
+                            v-model="contact.email"
+                          />
+                          <span
+                            class="erroe-feedbak"
+                            v-if="v$.contact.email.$error"
+                            >{{ v$.contact.email.$errors[0].$message }}</span
+                          >
+                        </div>
+                      </div>
+                      <!-- ارسال -->
+                      <div class="text-start mb-3 mt-4 mb-lg-4">
+                        <button
+                          style="
+                            background-color: #ef4823;
+                            border: none;
+                            width: 100%;
+                          "
+                          @click="contactus()"
+                          type="button"
+                          class="btn btn-primary btn-lg text-center"
+                        >
+                          ارسال
+                        </button>
+                      </div>
+                    </form>
+                    <div class="d-flex justify-content-center pt-2">
+                      <a
+                        class="btnn btn-outline-light btn-social"
+                        target="_blank"
+                        aria-label="facebook"
+                        href="https://www.facebook.com/GrowthTech.co"
+                        ><FontAwesome :icon="['fab', 'facebook']"
+                      /></a>
+                      <a
+                        class="btnn btn-outline-light btn-social"
+                        target="_blank"
+                        aria-label="Twitter"
+                        href="https://twitter.com/GrowthTech_co"
+                        ><FontAwesome :icon="['fab', 'twitter']"
+                      /></a>
+                      <a
+                        class="btnn btn-outline-light btn-social"
+                        target="_blank"
+                        aria-label="instagram"
+                        href="https://www.instagram.com/growth.tech13"
+                        ><FontAwesome :icon="['fab', 'instagram']"
+                      /></a>
+                      <a
+                        class="btnn btn-outline-light btn-social"
+                        target="_blank"
+                        aria-label="linkedin"
+                        href="https://www.linkedin.com/company/growthtech-co"
+                        ><FontAwesome :icon="['fab', 'linkedin']"
+                      /></a>
+                      <a
+                        class="btnn btn-outline-light btn-social"
+                        target="_blank"
+                        aria-label="linkedin"
+                        href="https://www.tiktok.com/@growth.tech13"
+                        ><FontAwesome :icon="['fab', 'tiktok']"
+                      /></a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="container">
                 <div class="row">
                   <div class="col-md-12 text-center mb-3 mb-md-0">
-                    All Right Reserved.
-
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By &copy;
-                    <a
+                    All Right Reserved. Designed By &copy;
+                    <span
                       class="border-bottom text-decoration-none"
-                      style="color: #ef4823 !important"
-                      >GROWTH</a
+                      style="color: #f29887 !important"
+                      >GROWTH</span
                     >
                   </div>
                 </div>
@@ -152,8 +226,73 @@
 </template>
 
 <script>
+import axios from "axios";
+import useValidate from "@vuelidate/core";
+import { required, email } from "@vuelidate/validators";
 export default {
-  name: "FooterCom",
+  name: "HomeCom",
+  data() {
+    return {
+      v$: useValidate(),
+      contact: {
+        name: "",
+        number: "",
+        email: "",
+      },
+    };
+  },
+  validations() {
+    return {
+      contact: {
+        name: { required },
+        number: { required },
+        email: { required, email },
+      },
+    };
+  },
+  methods: {
+    async contactus() {
+      this.loading = true;
+      this.v$.$validate();
+      if (!this.v$.$error) {
+        let result = await axios.post(
+          `https://admin.growth-tech.co/api/contact`,
+          this.contact
+        );
+        if (result.status == 200) {
+          this.$swal.fire({
+            icon: "success",
+            title: "تم...",
+            text: "عملية تسجيل ناجحة",
+            footer: "<p>تم تسجيل ردك بنجاح</p>",
+            timer: 2000,
+          });
+          setTimeout(() => {
+            this.successMessage = "";
+            this.contact.name = "";
+            this.contact.number = "";
+            this.contact.email = "";
+            this.contact.subject = "";
+            this.contact.message = "";
+            (this.v$.contact.name.$errors[0].$message = ""),
+              (this.v$.contact.number.$errors[0].$message = ""),
+              (this.v$.contact.email.$errors[0].$message = ""),
+              (this.v$.contact.subject.$errors[0].$message = ""),
+              (this.v$.contact.message.$errors[0].$message = "");
+          }, 2000);
+        }
+      } else {
+        this.$swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "عملية تسجيل خاطئة",
+          footer: "<p>املئ البيانات بطريقة صحيحة</p>",
+          timer: 2000,
+        });
+      }
+      this.loading = false;
+    },
+  },
 };
 </script>
 

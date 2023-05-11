@@ -148,7 +148,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .articles {
   direction: rtl;
   color: #1f1e1e;

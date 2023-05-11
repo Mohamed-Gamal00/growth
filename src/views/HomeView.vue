@@ -1,16 +1,20 @@
 <template>
   <div class="home">
-    <HomeCom />
+    <SecretImage />
   </div>
 </template>
 
 <script>
-import HomeCom from "@/components/home/HomeCom.vue";
-
+import { defineAsyncComponent } from "vue";
+// import HomeCom from "@/components/home/HomeCom.vue";
+const SecretImage = defineAsyncComponent({
+  loader: () => import("@/components/home/HomeCom.vue"),
+});
 export default {
   name: "HomeView",
   components: {
-    HomeCom,
+    // HomeCom,
+    SecretImage,
   },
 };
 </script>

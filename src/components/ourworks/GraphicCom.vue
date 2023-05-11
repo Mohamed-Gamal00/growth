@@ -110,9 +110,7 @@ export default {
   },
   async mounted() {
     this.loading = true;
-    let result = await axios.get(
-      `https://admin.growth-tech.co/api/graphics`
-    );
+    let result = await axios.get(`https://admin.growth-tech.co/api/graphics`);
     if (result.status == 200) {
       this.cats = result.data.cats;
       this.products = result.data.graphics;

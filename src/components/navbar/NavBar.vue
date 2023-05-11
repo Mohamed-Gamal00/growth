@@ -10,6 +10,7 @@
             height="40"
             alt="img"
           />
+          <p class="m-0" style="font-size: 10px">مؤسسة نمو التقنية</p>
         </router-link>
         <span
           style="background-color: #ef4823; color: white"
@@ -70,23 +71,23 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .style {
   direction: rtl;
 }
 
 .nav a {
   text-decoration: none;
-  color: #353536;
-  font-weight: 900;
+  color: #353536 !important;
+  font-weight: 900 !important;
+  transition: all 0.2s ease-in-out;
 }
 .nav a:hover {
-  color: #f53105;
+  color: #f53105 !important;
 }
-.router-link-exact-active a {
-  border-bottom: 3px solid #ef4823;
-  padding: 5px;
-  color: #ef4823;
+.nav .router-link-exact-active {
+  border-bottom: 3px solid #ef4823 !important;
+  color: #ef4823 !important;
 }
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);

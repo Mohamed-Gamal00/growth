@@ -1,24 +1,25 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import ArticlesView from "../views/ArticlesView.vue";
-import ArticlepostView from "../views/ArticlepostView.vue";
-import OurAppsView from "../views/OurAppsView.vue";
+// import HomeView from "../views/HomeView.vue";
+// import ArticlesView from "../views/ArticlesView.vue";
+// import ArticlepostView from "../views/ArticlepostView.vue";
+// import OurAppsView from "../views/OurAppsView.vue";
 import O_AppPostview from "../views/O_AppPostView.vue";
-import ProductsView from "../views/ProductsView.vue";
-import ServicesView from "../views/ServicesView.vue";
-import ProductDetailsView from "../views/ProductDetailsView";
+// import ProductsView from "../views/ProductsView.vue";
+// import ServicesView from "../views/ServicesView.vue";
+// import ProductDetailsView from "../views/ProductDetailsView";
 import ErrorView from "../views/ErrorView.vue";
 import ServerError from "../views/ServerError.vue";
-import OrderNow from "../components/products/OrderNow.vue";
-import O_MotionpostView from "../views/O_MotionpostView.vue";
-import AppsView from "../views/AppsView";
-import O_GraphicpostView from "../views/O_GraphicpostView.vue";
+// import OrderNow from "../components/products/OrderNow.vue";
+// import O_MotionpostView from "../views/O_MotionpostView.vue";
+// import AppsView from "../views/AppsView";
+// import O_GraphicpostView from "../views/O_GraphicpostView.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: () =>
+      import(/* webpackChunkName: "home" */ "../views/HomeView.vue"),
   },
   {
     path: "/about",
@@ -32,22 +33,26 @@ const routes = [
   {
     path: "/articles",
     name: "articles",
-    component: ArticlesView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ArticlesView.vue"),
   },
   {
     path: "/article/:id",
     name: "article",
-    component: ArticlepostView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ArticlepostView.vue"),
   },
   {
     path: "/ourworks",
     name: "ourwork",
-    component: OurAppsView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/OurAppsView.vue"),
   },
   {
     path: "/Apps",
     name: "apps",
-    component: AppsView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/AppsView.vue"),
   },
   {
     path: "/app/:id",
@@ -57,32 +62,40 @@ const routes = [
   {
     path: "/motion",
     name: "motion",
-    component: O_MotionpostView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/O_MotionpostView.vue"),
   },
   {
     path: "/graphic",
     name: "graphic",
-    component: O_GraphicpostView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/O_GraphicpostView.vue"),
   },
   {
     path: "/products",
     name: "products",
-    component: ProductsView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ProductsView.vue"),
   },
   {
     path: "/ordernow",
     name: "ordernow",
-    component: OrderNow,
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../components/products/OrderNow.vue"
+      ),
   },
   {
     path: "/services",
     name: "services",
-    component: ServicesView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ServicesView.vue"),
   },
   {
     path: "/details/:id",
     name: "details",
-    component: ProductDetailsView,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ProductDetailsView.vue"),
   },
   {
     path: "/servererror",
